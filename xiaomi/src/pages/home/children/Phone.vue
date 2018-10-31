@@ -111,7 +111,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 	.clearfix:after{
 		content: "";
 		display: block;
