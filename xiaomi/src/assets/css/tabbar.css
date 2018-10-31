@@ -1,0 +1,27 @@
+.wrapTabbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  border-top: 1px solid #ccc;
+  height: 90px;
+  font-size: 20px;
+  padding-top: 8px;
+  background: #fff;
+}
+.wrapTabbar .wrapItem {
+  flex: 1;
+  text-align: center;
+  color: #939393;
+}
+.wrapTabbar .wrapItem i {
+  display: inline-block;
+  color: #939393;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.wrapTabbar .active i,
+.wrapTabbar .active span {
+  color: #f56c02 !important;
+}
