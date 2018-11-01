@@ -9,3 +9,23 @@ legend { color:#000; }
 fieldset, img { border:0; }
 button, input, select, textarea { font-size:100%; } 
 table { border-collapse:collapse; border-spacing:0; }
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+ul,ol,li{
+	list-style: none;
+}
+.m12{
+	margin-bottom: .6rem;
+}
+img{
+	width: 100%;
+}

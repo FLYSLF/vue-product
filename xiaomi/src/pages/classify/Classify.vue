@@ -265,7 +265,6 @@
 //						拿取每一项的名字
 				this.list_min.map((item)=>{
 					this.category_name.push(item.category_name)
-					console.log(item);
 				})
 //						console.log(this.arr1);
 //						console.log(this.list_min,this.category_name);
