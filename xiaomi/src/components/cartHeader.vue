@@ -34,7 +34,6 @@ export default {
     right: 20/2px;
     height: 100%;
     span {
-      line-height: 80/2px;
       color: #000;
       padding: 0 18/2px;
     }

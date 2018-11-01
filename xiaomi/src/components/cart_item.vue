@@ -6,13 +6,18 @@
 		<div class="c_item_content">
 			<h3>{{json.title}}</h3>
 			<p class="comment">{{json.comment}}</p>
-			<span><i>￥</i>{{json.price}}<a class="iconfont">&#xe643;</a></span>
+			<span><i>￥</i>{{json.price}}<a class="iconfont" @click="addToCart()">&#xe643;</a></span>
 		</div>
 	</div>
 </template>
 <script>
 	export default {
-		props: ["json"]
+		props: ["json"],
+		methods:{
+			addToCart(){
+				this.$emit("change",this.json);
+			}
+		}
 	}
 </script>
 <style lang="less">
