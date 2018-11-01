@@ -19,33 +19,34 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80/2/12.5rem;
+  height: 80/12.5rem;
   background: #f2f2f2;
   .back {
     position: absolute;
-    left: 20/2/12.5rem;
+    left: 20/12.5rem;
     img {
-      width: 40/2/12.5rem;
-      height: 40/2/12.5rem;
+      width: 40/12.5rem;
+      height: 40/12.5rem;
     }
   }
   .message {
     position: absolute;
-    right: 20/2/12.5rem;
+    right: 20/12.5rem;
     height: 100%;
     span {
+      line-height: 80/12.5rem;
       color: #000;
-      padding: 0 18/2/12.5rem;
+      padding: 0 18/12.5rem;
     }
     i {
       position: relative;
-      top: 5/2/12.5rem;
+      top: 5/12.5rem;
       color: #939393;
-      font-size: 40/2/12.5rem;
+      font-size: 40/12.5rem;
     }
   }
   .title {
-    font-size: 30/2/12.5rem;
+    font-size: 30/12.5rem;
   }
 }
 </style>

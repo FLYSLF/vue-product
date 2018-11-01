@@ -19,37 +19,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="showProduct-list">
-			<ul class="clearfix">
-				<li v-for="item in product1">
-					<img :src="item.src" />
-					<div class="info">
-						<div class="name">{{item.name}}</div>
-						<div class="brief">{{item.brief}}</div>
-						<div class="price">{{item.price}}
-							<span>起</span>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
+		<ProList :list=product1></ProList>
 		<div class="hotSail">
 			<img src="static/images/801fa2e0-be9c-51e5-6d26-109b6414dc56!720x80.jpg"/>
 		</div>
-		<div class="showProduct-list">
-			<ul class="clearfix">
-				<li v-for="item in product2">
-					<img :src="item.src" />
-					<div class="info">
-						<div class="name">{{item.name}}</div>
-						<div class="brief">{{item.brief}}</div>
-						<div class="price">{{item.price}}
-							<span>起</span>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
+		<ProList :list=product2></ProList>
 		<div class="hotSail">
 			<img src="static/images/7009e741-50d2-46b2-3aac-8f9871d7880b!720x80.jpg"/>
 		</div>
@@ -63,25 +37,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="showProduct-list">
-			<ul class="clearfix">
-				<li v-for="item in product3">
-					<img :src="item.src" />
-					<div class="info">
-						<div class="name">{{item.name}}</div>
-						<div class="brief">{{item.brief}}</div>
-						<div class="price">{{item.price}}
-							<span>起</span>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
+		<ProList :list=product3></ProList>
 	</div>
 </template>
-
 <script>
 	import Banner from '@/components/Banner'
+	import ProList from './productList/ProList'
 	export default {
 		data(){
 			return {
@@ -106,12 +67,13 @@
 			}
 		},
 		components:{
-			Banner
+			Banner,
+			ProList
 		}
 	}
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 	.clearfix:after{
 		content: "";
 		display: block;

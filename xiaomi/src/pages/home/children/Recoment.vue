@@ -19,41 +19,29 @@
 			</ul>
 		</div>
 		<!--产品展示开始-->
-			<div class="showProduct1 clearfix m12">
-				<div class="left fl">
-					<img src="static/images/f79bb07f-eace-2126-0a5c-546fb7a7aaf2!358x508.jpg"/>
-				</div>
-				<div class="right fr">
-					<li><img src="static/images/145fe47f-4eb9-7419-e04c-aa0feefdd3ab!358x252.jpg"/></li>
-					<li><img src="static/images/fd815abaee77d453bf49d8bfe0b4d184.jpg"/></li>
-				</div>
+		<div class="showProduct1 clearfix m12">
+			<div class="left fl">
+				<img src="static/images/f79bb07f-eace-2126-0a5c-546fb7a7aaf2!358x508.jpg"/>
 			</div>
-			<div class="showProduct2 m12">
-				<img src="static/images/6990be0e-2bb0-737b-d898-176ecc38d9ba!720x280.jpg"/>
+			<div class="right fr">
+				<li><img src="static/images/145fe47f-4eb9-7419-e04c-aa0feefdd3ab!358x252.jpg"/></li>
+				<li><img src="static/images/fd815abaee77d453bf49d8bfe0b4d184.jpg"/></li>
 			</div>
-			<div class="showProduct-rec ml2">
-				<img src="static/images/81df2f03-a45d-f1e4-cd2f-a5e29bdb9f16!720x440.jpg"/>
-			</div>
-			<div class="showProduct-list">
-				<ul class="clearfix">
-					<li v-for="item in product">
-						<img :src="item.src" />
-						<div class="info">
-							<div class="name">{{item.name}}</div>
-							<div class="brief">{{item.brief}}</div>
-							<div class="price">{{item.price}}
-								<span>起</span>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
+		</div>
+		<div class="showProduct2 m12">
+			<img src="static/images/6990be0e-2bb0-737b-d898-176ecc38d9ba!720x280.jpg"/>
+		</div>
+		<div class="showProduct-rec ml2">
+			<img src="static/images/81df2f03-a45d-f1e4-cd2f-a5e29bdb9f16!720x440.jpg"/>
+		</div>
+		<ProList :list=product></ProList>
 		<!--产品展示结束-->
 	</div>
 </template>
 
 <script>
 	import Banner from '@/components/Banner'
+	import ProList from './productList/ProList'
 	export default {
 		data(){
 			return {
@@ -77,32 +65,13 @@
 			}
 		},
 		components:{
-			Banner
+			Banner,
+			ProList
 		}
 	}
 </script>
 
 <style scoped lang="less">
-	.clearfix:after{
-		content: "";
-		display: block;
-		clear: both;
-	}
-	.fl{
-		float: left;
-	}
-	.fr{
-		float: right;
-	}
-	ul,ol,li{
-		list-style: none;
-	}
-	.m12{
-		margin-bottom: .6rem;
-	}
-	img{
-		width: 100%;
-	}
 	.recoment .list{
 		.list-item{
 			width: 20%;
