@@ -3,7 +3,7 @@
 		<!-- <CartHeader title="购物车"></CartHeader> -->
     <div class="header">
 		<div class="title">购物车</div>
-		<div class="message"><span @click="deleteIcon()">{{deleteFlag?"编辑":"完成"}}</span><i class="iconfont ">&#xe763;</i></div>
+		<div class="message"><span @click="deleteIcon()">{{deleteFlag?"完成":"编辑"}}</span><i class="iconfont ">&#xe763;</i></div>
 	</div>
 		<div class="content">
       <div class="itemWrap" v-for="(item,index) in goodsList">
