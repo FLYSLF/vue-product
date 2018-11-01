@@ -21,7 +21,7 @@
 				<CartItem @change="addCart" :json="item"></CartItem>
 			</div>
 		</div>
-		<div class="submit">
+		<div class="submit" v-show="empty">
 			<div class="check" :class="{aa:checkto}" @click="toggle()">
 				<img v-show="allcheck" src="../../assets/img/check_press.png" alt="" />
 				<img v-show="!allcheck" src="../../assets/img/check_normal.png" alt="">
@@ -32,7 +32,7 @@
 			</div>
 			<div class="collection"><button  v-show="deleteFlag">移入收藏</button></div>
 			<div class="btn">
-				<button @click="submit()" :class="{complete:deleteFlag}">{{deleteFlag?"删除":"结算"}} <span v-show="!deleteFlag">(<span>{{sumNum}}</span>)</span></button>
+				<button @click="submit()"  :class="{complete:deleteFlag}">{{deleteFlag?"删除":"结算"}} <span v-show="!deleteFlag">(<span>{{sumNum}}</span>)</span></button>
 			</div>
 		</div>
 	</div>
@@ -184,11 +184,12 @@ export default {
       }
     },
     addCart(json){
-      console.log(json);
+      //提交
+      json.sum = 1;
       this.goodsList.push(json);
+      this.empty = true;
     }
-
-  }
+   }
 };
 </script>
 <style>

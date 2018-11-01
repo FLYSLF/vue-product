@@ -35,15 +35,15 @@ export default {
 <style lang="less" >
 .icon {
   padding: 30px 0;
-  height: 160/2px;
-  line-height: 160/2px;
+  height: 160/2/12.5rem;
+  line-height: 160/2/12.5rem;
   display: flex;
   align-items: center;
   .select {
     width: 15%;
     text-align: center;
     img {
-      width: 40/2px;
+      width: 40/2/12.5rem;
     }
   }
   .titile {
@@ -53,17 +53,17 @@ export default {
   }
   .img {
     border: 1px solid #e1dbdb;
-    width: 160/2px;
+    width: 160/2/12.5rem;
     text-align: center;
     img {
-      width: 120/2px;
+      width: 120/2/12.5rem;
     }
   }
 }
 .info {
   position: relative;
   width: 50%;
-  padding: 0 20/2px;
+  padding: 0 20/2/12.5rem;
   line-height: 1.5;
   .color {
     color: #b3a7a7;
@@ -74,30 +74,30 @@ export default {
   .price {
 		position: relative;
 		color: #ff5722;
-		padding: 0 20/2px;
-		font-size: 30/2px;
+		padding: 0 20/2/12.5rem;
+		font-size: 30/2/12.5rem;
 		i{
-			font-size: 15/2px;
+			font-size: 15/2/12.5rem;
 			position: absolute;
-			top: 5/2px;
+			top: 5/2/12.5rem;
 			left:0;
 		}
   }
   .range {
     border: 1px solid #ccc;
     display: flex;
-    width: 150/2px;
+    width: 150/2/12.5rem;
     text-align: center;
-    height: 50/2px;
-    line-height: 50/2px;
+    height: 50/2/12.5rem;
+    line-height: 50/2/12.5rem;
     position: absolute;
     right: 0;
-    bottom: -35/2px;
+    bottom: -35/2/12.5rem;
     div {
       flex: 1;
     }
     img {
-      width: 20/2px;
+      width: 20/2/12.5rem;
 		}
 		.disable{
       opacity: 0.3;
@@ -111,13 +111,13 @@ export default {
 .active{
     .color{
       background: #f3f3f3;
-      height: 40/2px;
-      line-height: 40/2px;
+      height: 40/2/12.5rem;
+      line-height: 40/2/12.5rem;
       text-indent: 1em;
       i{
         display: inherit;
-        font-size: 25/2px;
-        margin-right: 10/2px;
+        font-size: 25/2/12.5rem;
+        margin-right: 10/2/12.5rem;
         float: right;
       }
     }

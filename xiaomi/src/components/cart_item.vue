@@ -29,9 +29,9 @@
 		}
 	}
 	.c_item_content {
-		padding: 0 15px;
+		padding: 0 15/12.5rem;
 		h3 {
-			font-size: 12px;
+			font-size: 12/12.5rem;
 			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: nowrap;
@@ -43,10 +43,10 @@
 		span {
 			color: #ff5722;
 			display: block;
-			height: 30px;
-			line-height: 30px;
+			height: 30/12.5rem;
+			line-height: 30/12.5rem;
 			.iconfont {
-				font-size: 20px;
+				font-size: 20/12.5rem;
 				color: #ccc;
 				float: right;
 			}
