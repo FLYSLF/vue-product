@@ -34,7 +34,10 @@ export default {
     right: 20/12.5rem;
     height: 100%;
     span {
+<<<<<<< HEAD
       line-height: 80/12.5rem;
+=======
+>>>>>>> 9cd9a636773ee7bc3c829c49f064cf5dbbf92980
       color: #000;
       padding: 0 18/12.5rem;
     }
