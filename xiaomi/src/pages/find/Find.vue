@@ -1,5 +1,5 @@
 <template>
-	<div style="height: 10000px;">
+	<div class="find" style="height: 10000px;">
 		<Myheader>
 			<img slot="leftImg" src="../../assets/img/footerNavImg/001.png"/>
 			<img slot="rightImg" src="../../assets/img/footerNavImg/002.png"/>
@@ -17,7 +17,7 @@
 		</div>
 		<div class="mijia">
 			<div class="fl">
-				<img src="../../assets/img/ppt.jpg" width="280" height="250"/>
+				<img src="../../assets/img/ppt.jpg" width="140" height="125"/>
 			</div>
 			<div class="bot">
 				<a href="#">
@@ -28,14 +28,14 @@
 			</div>
 		</div>
 		<div class="mix">
-			<a href="#"><img id="imgs" src="../../assets/img/mix3.jpg" width="100%" height="300"/></a>
+			<a href="#"><img id="imgs" src="../../assets/img/mix3.jpg" width="100%" height="150"/></a>
 		</div>
 		<div class="paper">
 			<h3>商城早报</h3>
 			<div class="slide">
 				<ul>
 					<li class="fl-l">
-						<div><a href="#"><img src="../../assets/img/slide6.jpg" /></a></div>
+						<div><a href="#"><img src="../../assets/img/slide6.jpg"/></a></div>
 					</li>
 					<li class="fl-l">
 						<div><a href="#"><img src="../../assets/img/slide2.jpg" /></a></div>
@@ -65,7 +65,20 @@
 			<a href="" class="fr-a">4646阅读</a>
 			</div>
 		</div>
-
+		<div class="miaosha jimu">
+			<a href="">
+				<img src="../../assets/img/jimu.jpg" width="100%" height="105"/>
+				<div class="een">
+					<h4>米兔指尖积木，发挥想像自由拼插，你的解压神器</h4>
+					<span>这一块小小的米兔指尖积木，你能拼出多少种形状</span>
+				</div>
+				<div class="foot-a">
+					<span class="fl-a">6天前</span>
+					<span class="fr-a">11235阅读</span>
+				</div>
+			</a>
+		</div>
+		<div class="solid"></div>
 	</div>
 </template>
 

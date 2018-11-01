@@ -21,7 +21,7 @@
 		position: fixed;
 		top: 0;
 		z-index: 30;
-		background: #ccc;
+		background: #fff;
 	}
 	.seach-head{
 		width: 80%;
@@ -31,7 +31,7 @@
 		top: 10/2px;
 		left: 80/2px;
 		input{
-			position: absolute;
+			/*position: absolute;*/
 			width: 100%;
 			height: 40/2px;
 			border: none;
