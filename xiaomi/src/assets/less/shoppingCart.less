@@ -1,0 +1,147 @@
+.broadcast {
+  text-align: left;
+}
+// 头部
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80/2/12.5rem;
+  background: #f2f2f2;
+  .back {
+    position: absolute;
+    left: 20/2/12.5rem;
+    img {
+      width: 40/2/12.5rem;
+      height: 40/2/12.5rem;
+    }
+  }
+  .message {
+    position: absolute;
+    right: 20/2/12.5rem;
+    height: 100%;
+    line-height: 40/12.5rem;
+    span {
+      line-height: 80/2/12.5rem;
+      color: #000;
+      padding: 0 18/2/12.5rem;
+    }
+    i {
+      position: relative;
+      top: 5/2/12.5rem;
+      color: #939393;
+      font-size: 40/2/12.5rem;
+    }
+  }
+  .title {
+    font-size: 30/2/12.5rem;
+  }
+}
+
+.broadcast {
+  .content {
+    text-align: left;
+    margin-top: 45/12.5rem;
+    //购物车为空的状态
+    .empry{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 60/12.5rem;
+        color: #bdbdbd;
+        i{
+            font-size: 20/12.5rem;
+            color: #bdbdbd;
+            padding: 0 10/12.5rem;
+        }
+        button{
+            border: 1/12.5rem solid #ccc;
+            background: none;
+            padding: 5/12.5rem;
+            margin-left: 10/12.5rem;
+            outline: none;
+        }
+    }
+  }
+  .submit {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 100/2/12.5rem;
+    height: 100/2/12.5rem;
+    line-height: 100/2/12.5rem;
+    background: #fff;
+  }
+  .check {
+    padding: 0 30/2/12.5rem;
+    img {
+      width: 40/2/12.5rem;
+    }
+  }
+  .total {
+    margin-left: 60/2/12.5rem;
+    span {
+      color: #ff5722;
+      display: inline-block;
+      position: relative;
+      padding: 0 20/2/12.5rem;
+      font-size: 30/2/12.5rem;
+      i {
+        position: absolute;
+        bottom: 5/2/12.5rem;
+        height: 100%;
+        font-size: 15/2/12.5rem;
+        left: 0;
+      }
+    }
+  }
+  .btn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    button {
+      display: block;
+      background: #ff6700;
+      color: #fff;
+      height: 100%;
+      width: 100%;
+      border: none;
+    }
+    .complete {
+      background: red;
+    }
+  }
+  .collection {
+      width: 40%;
+    button {
+      background: #ff6700;
+      display: block;
+      color: #fff;
+      height: 100%;
+      width: 100%;
+      border: none;
+    }
+  }
+  .more {
+    .guessyoulike {
+      /*background: url("../../assets/img/guessyoulike.jpg") no-repeat;*/
+      /*background-size: 100%;*/
+      /*height: 130/2/12.5rem;*/
+      margin-bottom: 5/12.5rem;
+    }
+  }
+  .moreList {
+    float: left;
+    width: 50%;
+    padding: 0 1%;
+    box-sizing: border-box;
+    .item {
+    }
+  }
+}
