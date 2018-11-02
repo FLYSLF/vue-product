@@ -5,8 +5,8 @@
 		</TopSearch>
 		<div class="content">
 			<div class="cla-Left">
-				<li v-for="(itemleft,index) in list_min">
-					<a :href="'#'+itemleft.category_id">{{itemleft.category_name}}</a>
+				<li v-for="(itemleft,index) in list_min" >
+					<a @click="clickme($event)" :href="'#'+itemleft.category_id">{{itemleft.category_name}}</a>
 				</li>
 			</div>
 			<div class="cla-Right">
@@ -203,16 +203,13 @@
 				mao:[],
 				//出行项
 				chuxing:[],
-				//出行项
+				//电源项
 				chuandai:[],
 				zhineng:[],
 				dianyuan:[],
-				
 			}
 		},
-		computed:{
-			
-		},
+		
 		mounted(){
 			//访问接口
 			//var That = this;
@@ -255,9 +252,9 @@
 				this.chuxing = this.arr6.category_list[2].body.items
 				//穿戴
 				this.chuandai = this.arr7.category_list[2].body.items
-				//穿戴
+				//智能
 				this.zhineng = this.arr8.category_list[2].body.items
-				//穿戴
+				//电源
 				this.dianyuan = this.arr9.category_list[2].body.items
 //							console.log(this.arr4);
 				
@@ -265,20 +262,29 @@
 //						拿取每一项的名字
 				this.list_min.map((item)=>{
 					this.category_name.push(item.category_name)
-					console.log(item);
+//					console.log(item);
 				})
 //						console.log(this.arr1);
-//						console.log(this.list_min,this.category_name);
+//						console.log(this.list_min);
 			})				
+		},
+		methods:{
+			clickme:function(event){
+				
+				var liDom = document.getElementsByClassName("active");
+				for(var i=0;i<liDom.length;i++){
+					liDom[i].className= "";
+				}
+				event.srcElement.parentElement.className =event.srcElement.parentElement.className + " active";
+				
+//				console.log(event)
+			}
 		}
 
 	}
 </script>
 
 <style lang="less">
-	/*.audio{
-		overflow-x: hidden;
-	}*/
 	.content {
 		width: 100%;
 		margin-bottom: 280/75rem;
@@ -289,8 +295,6 @@
 		a{
 			color: #666;
 		}
-		/*overflow-Y: hidden; 
-		overflow-X: auto;*/
 		
 		/*内容左边部分开始*/
 		.cla-Left {
@@ -308,6 +312,9 @@
 				justify-content: center;
 				align-items: center;
 			}
+			.active>a{
+					color: orangered;
+				}
 		}
 		/*内容左边部分结束*/
 		/*内容右边部分开始*/
