@@ -17,6 +17,8 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 var express = require("express");
 var app = express();
 var listData = require("../src/listdata.json");
+//购物车更多 json数据
+var cart_itemData = require("../src/data/cart_item.json");
 var apiRoutes = express.Router();
 app.use("/api",apiRoutes);
 
@@ -34,7 +36,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   			res.json({
   				data:listData
   			});
-  		});
+      });
+      app.get("/api/cartData",function(req,res){
+  			res.json({
+  				data:cart_itemData
+  			});
+      });
   	},
     clientLogLevel: 'warning',
     historyApiFallback: {
