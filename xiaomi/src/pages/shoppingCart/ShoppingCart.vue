@@ -187,6 +187,7 @@ export default {
       var ranNum = Math.floor(Math.random() * this.moreList.length);
       this.moreList.sort((a, b) => Math.random() - 0.5);
       this.empty = true;
+      console.log(this.moreList.length)
     },
     //置顶
     settop() {

@@ -33,7 +33,7 @@ export default {
 		}
   },
   mounted(){
-    console.log(this.json)
+    console.log(this.json.color)
   },
   methods:{
     clickAdd(){
