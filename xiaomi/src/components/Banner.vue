@@ -15,15 +15,32 @@
 			paginationLocation:{
 				type:String,
 				default:"right"
+			},
+			autoplay:{
+				type:Number,
+				default:2000
+			},	
+			paginationShow:{
+				type:Boolean,
+				default:true
+			},
+			paginationPositon:{
+				type:String,
+				default:"center"
+			},
+			paginationType:{
+				type:String,
+				default:"bullets"
 			}
 		},
 		mounted(){
 			var myBanner = new Swiper(".h-banner",{
 				loop:true,
-				autoplay:2000,
+				autoplay:this.autoplay,
 			    //分页器
 			    pagination: '.swiper-pagination',
-			    paginationType : 'bullets'
+			    paginationType:this.paginationType,
+			    autoplayDisableOnInteraction:false,
 			});
 		}
 	}

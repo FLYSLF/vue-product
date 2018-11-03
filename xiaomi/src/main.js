@@ -9,7 +9,9 @@ import Axios from 'axios'
 import Vueaxios from 'vue-axios'
 Vue.use(Vueaxios,Axios);
 Vue.config.productionTip = false
-
+import Mint from 'mint-ui';
+import 'mint-ui/lib/style.css';
+Vue.use(Mint);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

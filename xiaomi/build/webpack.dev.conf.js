@@ -17,6 +17,7 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 var express = require("express");
 var app = express();
 var listData = require("../src/listdata.json");
+var serice = require("../src/data/Serice1.json");
 var apiRoutes = express.Router();
 app.use("/api",apiRoutes);
 
@@ -33,6 +34,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   		app.get("/api/listData",function(req,res){
   			res.json({
   				data:listData
+  			});
+  		});
+  		app.get("/api/serice",function(req,res){
+  			res.json({
+  				data:serice
   			});
   		});
   	},
