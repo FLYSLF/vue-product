@@ -13,10 +13,12 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+
+ 
 //配置接口
 var express = require("express");
 var app = express();
-var listData = require("../src/listdata.json");
+var listData = require("../src/data/find_item");
 var apiRoutes = express.Router();
 app.use("/api",apiRoutes);
 
@@ -30,7 +32,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // these devServer options should be customized in /config/index.js
   devServer: {
   	before(app){
-  		app.get("/api/listData",function(req,res){
+  		app.get("/api/find_item",function(req,res){
   			res.json({
   				data:listData
   			});

@@ -1,92 +1,82 @@
 .find {
+  margin-bottom: 60px;
   text-align: left;
-  font-size: 6px;
+  font-size: 1.28rem;
 }
 a {
   text-decoration: none;
 }
 .li-fin img {
   width: 100%;
-  height: 75px;
 }
 .li-fin {
   display: flex;
   width: 100%;
-  height: 87.5px;
-  margin-top: 80px;
+  height: 7.04rem;
   border-bottom: 1px solid #666666;
-}
-.li-fin .fr {
-  float: left;
 }
 .mijia .fl {
   display: inline-block;
-  width: 140px;
-  height: 125px;
+  width: 11.2rem;
+  height: 10rem;
 }
 .mijia .bot {
   display: inline-block;
-  width: 175px;
-  height: 80px;
-  padding-top: 20px;
-  padding-right: 52.5px;
-  float: right;
+  width: 14rem;
+  height: 6.4rem;
+  padding-top: 3.2rem;
+  padding-right: 4rem;
 }
 .bot h4 {
-  font-size: 7px;
+  font-size: 0.56rem;
   color: #666;
 }
 .mijia {
   width: 100%;
-  height: 125px;
+  height: 10rem;
 }
 .mijia .p1 {
-  line-height: 20px;
-  font-size: 10.5px;
+  line-height: 1.6rem;
+  font-size: 0.84rem;
   color: #CCCCCC;
 }
 .bot .ai {
-  font-size: 12px;
+  font-size: 0.96rem;
   color: #CCCCCC;
 }
 .paper .slide {
   width: 100%;
-  height: 100px;
+  height: 8rem;
   overflow: auto;
-}
-.paper .slide .fl-l {
-  float: left;
 }
 .paper .slide .fl-l img {
   width: 125%;
-  height: 100px;
+  height: 8rem;
 }
 .paper ul {
   display: flex;
   width: 240%;
-  height: 50px;
+  height: 4rem;
   white-space: nowrap;
 }
 .paper li div {
-  float: left;
   width: 80%;
 }
 .paper li {
   flex: 1;
-  float: left;
   list-style: none;
 }
 .paper h3 {
-  margin-top: 12.5px;
-  margin-left: 7.5px;
-  padding-bottom: 2.5px;
+  margin-top: 1rem;
+  margin-left: 0.6rem;
+  padding-bottom: 0.2rem;
   color: #666;
 }
 .miaosha {
-  margin-top: 2.5px;
+  margin-top: 0.2rem;
 }
 .miaosha .een {
-  margin-left: 5px;
+  margin-left: 0.4rem;
 }
 .miaosha .een h4 {
   color: #666;
@@ -98,24 +88,164 @@ a {
   color: #ccc;
 }
 .miaosha .foot-a {
-  margin-left: 10px;
-  margin-top: 5px;
+  margin-left: 0.8rem;
+  margin-top: 0.4rem;
 }
 .miaosha .foot-a .fl-a {
-  font-size: 6px;
-  float: left;
+  font-size: 0.48rem;
   color: #ccc;
 }
 .miaosha .foot-a .fr-a {
-  font-size: 6px;
-  float: right;
-  margin-right: 10px;
+  font-size: 0.48rem;
+  margin-right: 0.8rem;
   color: #ccc;
 }
 .jimu {
-  margin-top: 25px;
+  margin-top: 2rem;
 }
 .solid {
-  margin-top: 30px;
+  margin-top: 2.4rem;
   border: 1px solid #ccc;
+}
+.see {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+.see .see2 {
+  font-size: 1.28rem;
+  color: #939393;
+  margin-top: 0.16rem;
+}
+.see i {
+  position: relative;
+  top: -0.16rem;
+  right: -0.4rem;
+  color: #939393;
+  vertical-align: middle;
+}
+.puality .quito {
+  margin-top: 0.4rem;
+}
+.puality .quito a {
+  color: #939393;
+  margin-left: 0.4rem;
+}
+.puality .quito div h5 {
+  display: inline-block;
+  margin-left: 0.4rem;
+}
+.puality .quito div span {
+  color: red;
+  margin-right: 0.4rem;
+}
+.puality h2 {
+  margin-left: 0.4rem;
+  color: #939393;
+}
+.puality .imgs {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  margin-top: 0.48rem;
+}
+.puality .imgs img {
+  width: 100%;
+  height: 20rem;
+}
+.puality .imgs h5 {
+  margin-left: 5px;
+}
+.LED .inte {
+  width: 50%;
+  display: inline-block;
+}
+.LED .inte img {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 16rem;
+}
+.LED .inte h5 {
+  margin-left: 5px;
+}
+.LED .inte span {
+  margin-left: 5px;
+  margin-top: 0.4rem;
+  color: red;
+}
+.LED .router {
+  width: 50%;
+  display: inline-block;
+}
+.LED .router img {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 16rem;
+}
+.LED .router h5 {
+  margin-left: 5px;
+}
+.LED .router span {
+  color: red;
+}
+.LED {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.LED .plate {
+  width: 50%;
+}
+.LED .plate img {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 16rem;
+}
+.LED .plate h5 {
+  margin-left: 5px;
+}
+.LED .plate span {
+  margin-left: 5px;
+  margin-top: 0.4rem;
+  color: red;
+}
+.travel {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.travel h2 {
+  margin-top: 10px;
+  margin-left: 0.4rem;
+  color: #939393;
+}
+.travel .recorder {
+  width: 50%;
+  height: 240px;
+}
+.travel .recorder img {
+  margin-top: 0.4rem;
+  width: 100%;
+}
+.travel .recorder span {
+  margin-left: 5px;
+  margin-top: 0.4rem;
+  color: red;
+}
+.travel .recorder h5 {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.travel .source {
+  width: 50%;
+}
+.travel .source img {
+  margin-top: 0.4rem;
+  width: 100%;
+}
+.travel .source span {
+  margin-left: 5px;
+  margin-top: 0.4rem;
+  color: red;
 }
