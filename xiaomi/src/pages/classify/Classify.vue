@@ -12,7 +12,9 @@
 			<div class="cla-Right">
 				<!--新品-->
 				<ClassifyC id="653" class="wear">
-					<img slot="image" src="static/images/t1.jpg"/>
+						<router-link to="/Detailsc" slot="image">
+							<img  src="static/images/t1.jpg"/>
+						</router-link>
 				</ClassifyC>	
 				
 				<ImageSmall newsj='手机' :info_list="info_lists">
@@ -262,10 +264,10 @@
 //						拿取每一项的名字
 				this.list_min.map((item)=>{
 					this.category_name.push(item.category_name)
-<<<<<<< HEAD
+
 //					console.log(item);
-=======
->>>>>>> 085103ae6633a8b077385997ae6a99d654d347d7
+
+
 				})
 //						console.log(this.arr1);
 //						console.log(this.list_min);

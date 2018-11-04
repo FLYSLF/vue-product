@@ -1,11 +1,8 @@
 <template>
 	<div class="classifyC" >
-		<div name="classify">
 			<div class="img">
 				<span class="image"><slot name="image"></slot></span>
 			</div>
-			
-		</div>
 	</div>
 </template>
 
@@ -18,15 +15,7 @@
 <style lang="less">
 	.classifyC {
 		width: 100%;
-		.img {
-			width: 100%;
-			.image {
-				display: inline-block;
-				img{
-					width: 100%;
-				}
-			}
-		}
+	
 		/*.phone {
 			margin: 15px auto;
 			text-align: center;

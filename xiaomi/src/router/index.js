@@ -13,7 +13,10 @@ import Entertainment from '@/pages/home/children/Entertainment';
 import Tv from '@/pages/home/children/Tv';
 import Homele from '@/pages/home/children/Homele';
 
-import Classify from '@/pages/classify/Classify'
+import Classify from '@/pages/classify/Classify';
+import Detailsc from '@/pages/classify/children/Detailsc';
+
+
 import Find from '@/pages/find/Find'
 import ShoppingCart from '@/pages/shoppingCart/ShoppingCart'
 import Mine from '@/pages/mine/Mine'
@@ -39,7 +42,12 @@ export default new Router({
     {
       path: '/classify',
       name: 'Classify',
-      component: Classify
+      component: Classify,
+    },
+    {
+    	path:'/Detailsc',
+    	name:'Detailsc',
+    	component:Detailsc,
     },
     {
       path: '/find',
