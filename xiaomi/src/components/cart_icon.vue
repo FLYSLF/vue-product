@@ -13,11 +13,11 @@
 					<p class="color"><span>{{json.colorList[randNum]}}</span><i class="iconfont icon-xiafangxiang"></i></p>
 					<p class="price"><span><i>￥</i>{{json.price}}</span></p>
 					<div class="range">
-							<!-- <div class="reduce" :class="{disable:json.sum == 1}" @click="json.sum > 1 ? json.sum-- : 1;"><img src="../assets/img/reduce.png" alt=""></div> -->
-							<div class="reduce" :class="{disable:json.sum == 1}" @click="clickNum(false)"><img src="../assets/img/reduce.png" alt=""></div>
+							<div class="reduce" :class="{disable:json.sum == 1}" @click="json.sum > 1 ? json.sum-- : 1;"><img src="../assets/img/reduce.png" alt=""></div>
+							<!-- <div class="reduce" :class="{disable:json.sum == 1}" @click="clickNum(false)"><img src="../assets/img/reduce.png" alt=""></div> -->
 							<div class="sum"><span>{{json.sum}}</span></div>
-							<!-- <div class="add" :class="{disable:json.sum == 10}" @click="json.sum < 10 ? json.sum++ : 10;"><img src="../assets/img/add.png" alt=""></div> -->
-							<div class="add" :class="{disable:json.sum == 10}" @click="clickNum(true)"><img src="../assets/img/add.png" alt=""></div>
+							<div class="add" :class="{disable:json.sum == 10}" @click="json.sum < 10 ? json.sum++ : 10;"><img src="../assets/img/add.png" alt=""></div>
+							<!-- <div class="add" :class="{disable:json.sum == 10}" @click="clickNum(true)"><img src="../assets/img/add.png" alt=""></div> -->
 					</div>				
 			</div>
     </div>
@@ -36,25 +36,6 @@ export default {
     bol: function() {
       return this.json.flag ? 1 : 0;
     }
-  },
-  methods: {
-    clickNum(bol) {
-      this.json.flag = !this.json.flag;
-      this.json.flag = !this.json.flag;
-      bol
-        ? this.json.sum < 10
-          ? this.json.sum++
-          : 10
-        : this.json.sum > 1
-          ? this.json.sum--
-          : 1;
-    }
-    // clickReduce(){
-    //   this.json.flag = !this.json.flag;
-    //   this.json.flag = !this.json.flag;
-    //   this.json.sum > 1 ? this.json.sum-- : 1;
-
-    // }
   }
 };
 </script>

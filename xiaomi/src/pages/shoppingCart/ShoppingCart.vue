@@ -144,10 +144,8 @@ export default {
   methods: {
     //全选切换
     toggle() {
-      this.allcheck = !this.allcheck;
-      this.allcheck
-        ? this.goodsList.map(item => (item.flag = true)) !== undefined
-        : this.goodsList.map(item => (item.flag = false)) === undefined;
+      this.allcheck = ! this.allcheck;
+      this.allcheck ? this.goodsList.map(item => (item.flag = true)) !== undefined : this.goodsList.map(item => (item.flag = false)) === undefined;
     },
     deleteIcon() {
       //如果编辑则设置所有商品都是未选中状态 deleteFlag为true是完成状态 false切换
@@ -191,8 +189,6 @@ export default {
           }
         }
       });
-        
-        
       }
     },
     // 添加至购物车
@@ -210,8 +206,7 @@ export default {
     //置顶
     settop() {
       var timer = setInterval(() => {
-        document.documentElement.scrollTop -=
-          document.documentElement.scrollTop / 10;
+        document.documentElement.scrollTop -= document.documentElement.scrollTop / 10;
         if (document.documentElement.scrollTop <= 0) {
           clearInterval(timer);
         }

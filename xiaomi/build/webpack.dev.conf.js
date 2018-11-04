@@ -17,6 +17,7 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 var express = require("express");
 var app = express();
 var listData = require("../src/listdata.json");
+var serice = require("../src/data/Serice1.json");
 //购物车更多 json数据
 var cart_itemData = require("../src/data/cart_item.json");
 //详情评论数据
@@ -38,7 +39,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   			res.json({
   				data:listData
   			});
-      });
+  		});
+  		app.get("/api/serice",function(req,res){
+  			res.json({
+  				data:serice
+  			});
+  		});
       app.get("/api/cartData",function(req,res){
   			res.json({
   				data:cart_itemData
@@ -51,7 +57,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       });
   	},
     clientLogLevel: 'warning',
-    historyApiFallback: {
+    historyApiFallback:{
       rewrites: [
         { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
       ],
@@ -95,7 +101,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     ])
   ]
 })
-
 module.exports = new Promise((resolve, reject) => {
   portfinder.basePort = process.env.PORT || config.dev.port
   portfinder.getPort((err, port) => {
