@@ -1,21 +1,21 @@
 <template>
 	<div class="c_item">
-		<div class="item_img">
-			<img :src="json.imgSrc" alt="">
+		<div class="item_img" >
+			<img v-lazy="json.image_url" :src="json.image_url" alt="">
 		</div>
 		<div class="c_item_content">
-			<h3>{{json.title}}</h3>
-			<p class="comment">{{json.comment}}</p>
+			<h3>{{json.name}}</h3>
+			<p class="product_desc">{{json.product_desc}}</p>
 			<span><i>￥</i>{{json.price}}<a class="iconfont" @click="addToCart()">&#xe643;</a></span>
 		</div>
 	</div>
 </template>
 <script>
 	export default {
-		props: ["json"],
+		props: ["json","index"],
 		methods:{
 			addToCart(){
-				this.$emit("change",this.json);
+				this.$emit("change",this.json,this.index);
 			}
 		}
 	}
@@ -39,6 +39,9 @@
 		}
 		p {
 			color: #b3a7a7;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
 		}
 		span {
 			color: #ff5722;

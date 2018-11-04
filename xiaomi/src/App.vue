@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <router-view/>
-	  <Tabbar/>
+     <router-view v-on:tabbar_shows="tabbar_shows"/>
+    	<Tabbar v-if="tabbar_show" ></Tabbar>
   </div>
 </template>
 
@@ -11,7 +11,16 @@ export default {
   name: 'App',
   components:{
   	Tabbar
-  }
+  },
+	data(){
+		return {
+			tabbar_show:true
+		}
+	},methods:{
+		tabbar_shows(show){
+			this.tabbar_show = show
+		}
+	}
 }
 </script>
 

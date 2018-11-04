@@ -19,7 +19,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80/12.5rem;
+  height: 200/12.5rem;
   background: #f2f2f2;
   .back {
     position: absolute;

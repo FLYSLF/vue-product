@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3.2rem;
+  height: 4rem;
   background: #f2f2f2;
 }
 .header .back {
@@ -24,8 +24,6 @@
 .header .message {
   position: absolute;
   right: 0.8rem;
-  height: 100%;
-  line-height: 3.2rem;
 }
 .header .message span {
   line-height: 3.2rem;
@@ -124,15 +122,61 @@
   width: 100%;
   border: none;
 }
+.broadcast .more {
+  padding-bottom: 4rem;
+  overflow: hidden;
+}
 .broadcast .more .guessyoulike {
   /*background: url("../../assets/img/guessyoulike.jpg") no-repeat;*/
   /*background-size: 100%;*/
   /*height: 130/2/12.5rem;*/
   margin-bottom: 0.4rem;
 }
+.broadcast .more .m_footer {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height: 6.4rem;
+  background: #f6f6f6;
+  line-height: 6.4rem;
+  color: #9a9191;
+}
+.broadcast .more .m_footer hr {
+  width: 30%;
+  margin: 0 1.6rem;
+  border: none;
+  height: 1px;
+  background: #bfb4b4;
+  display: inline-block;
+}
+.broadcast .pb100 {
+  padding-bottom: 8rem;
+}
 .broadcast .moreList {
   float: left;
   width: 50%;
   padding: 0 1%;
+  height: 264px;
   box-sizing: border-box;
+}
+#setTop {
+  position: fixed;
+  bottom: 17%;
+  opacity: 0;
+  right: 1%;
+}
+#setTop img {
+  width: 30px;
+}
+.setTopAnimate {
+  animation: setTopAnimate .3s linear both;
+}
+@keyframes setTopAnimate {
+  from {
+    transform: rotate(360deg) scale(0);
+  }
+  to {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
 }
