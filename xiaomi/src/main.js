@@ -7,11 +7,18 @@ import './assets/css/reset.css'
 //引入axios和vue-axios
 import Axios from 'axios'
 import Vueaxios from 'vue-axios'
+
+import Mint from "mint-ui"
+import "mint-ui/lib/style.css"
+Vue.use(Mint);
 Vue.use(Vueaxios,Axios);
 Vue.config.productionTip = false
+<<<<<<< HEAD
 import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
 Vue.use(Mint);
+=======
+>>>>>>> b5564a0091a4ba96c7601adaf580784bd0567986
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
