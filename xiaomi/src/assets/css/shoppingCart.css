@@ -180,3 +180,55 @@
     opacity: 1;
   }
 }
+.addCart {
+  width: 12rem;
+  height: 8rem;
+  position: fixed;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 1.6rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  animation: addCartSucess .3s linear;
+}
+.addCart i {
+  font-size: 2.4rem;
+}
+.addCart h3 {
+  width: 100%;
+}
+@keyframes addCartSucess {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mint-msgbox-content {
+  border: none;
+}
+.mint-msgbox {
+  width: 95%;
+  padding-bottom: 20px;
+}
+.mint-msgbox-message {
+  font-size: 14px;
+  height: 100px;
+  line-height: 8rem;
+}
+.mint-msgbox-btns {
+  padding: 0 10px;
+}
+.mint-msgbox-btns button {
+  margin: 0 5px;
+  color: #6b6b6b;
+  border: 1px solid #ddd;
+}
+.mint-msgbox-btns .mint-msgbox-confirm {
+  background: #ff5722;
+  color: #fff;
+}

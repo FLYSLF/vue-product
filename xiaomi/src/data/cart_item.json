@@ -1,6 +1,7 @@
 [
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7105",
@@ -17,6 +18,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "3781",
@@ -33,6 +35,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "3705",
@@ -49,6 +52,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "6827",
@@ -65,6 +69,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5416",
@@ -81,22 +86,7 @@
   },
   {
     "color": "黑色",
-    "action": {
-      "type": "product",
-      "path": "3938",
-      "log_code": "recom_list_0-9#eid=15:14:0:0:0:0:0:0:0:0&tid=BlankRec-78cpaAwFqwUTL0eVFuqCzg==&page=list&pid=3938",
-      "recommend_code": "recom_list_0-9#eid=15:14:0:0:0:0:0:0:0:0&tid=BlankRec-78cpaAwFqwUTL0eVFuqCzg==&page=list&pid=3938"
-    },
-    "image_url": "//i8.mifile.cn/v1/a1/23a31439-7de5-20d3-868c-1ac61bdafe93.webp",
-    "flag": true,
-    "market_price": "39",
-    "name": "90分轻户外旅行洗漱包",
-    "price": "29",
-    "product_desc": "降落伞专用面料，轻质透气，内外双层防水 / U型大开口设计，梯形结构，增加内容量",
-    "sum": 1
-  },
-  {
-    "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7201",
@@ -113,6 +103,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5422",
@@ -129,6 +120,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7210",
@@ -145,6 +137,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "4231",
@@ -161,6 +154,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5677",
@@ -177,6 +171,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7132",
@@ -193,6 +188,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5729",
@@ -209,6 +205,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "6305",
@@ -225,6 +222,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "4918",
@@ -241,6 +239,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "4943",
@@ -257,6 +256,7 @@
   },
   {
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8634",
@@ -278,6 +278,7 @@
     "name": "都市双肩包",
     "image_url": "//i8.mifile.cn/v1/a1/ef95ebb1-4457-cdd9-2bef-7458028a4ad0.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "2839",
@@ -297,6 +298,7 @@
     "name": "休闲胸包",
     "image_url": "//i8.mifile.cn/v1/a1/8a32f092-a784-b908-aca8-a682120b8f58.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "3460",
@@ -316,6 +318,7 @@
     "name": "双肩包",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/53b7ca5d69744a66e71104be29109132.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7899",
@@ -335,6 +338,7 @@
     "name": "学院休闲背包",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/7d2918fdab49684c39d8523b47a17920.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5831",
@@ -354,6 +358,7 @@
     "name": "小米双肩包",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/9c8b385a9cca7cc3297f8429c5ab86ba.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5422",
@@ -373,6 +378,7 @@
     "name": "90分全天候机能背包",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/bce64a858adf0dcb18531d963ec144f7.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7688",
@@ -392,6 +398,7 @@
     "name": "小米时尚通勤双肩包",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/4129b69c08a63600fd04bd7e5cf4a9ee.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8117",
@@ -411,6 +418,7 @@
     "name": "休闲双肩包",
     "image_url": "//i8.mifile.cn/v1/a1/c3bd4c73-e339-3bf0-e28b-fe6f1c67d425.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7132",
@@ -430,6 +438,7 @@
     "name": "90分旅行箱 1A 20英寸",
     "image_url": "//i8.mifile.cn/v1/a1/2d73660e-c11e-9688-d15d-bf6754bbf426.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8655",
@@ -449,6 +458,7 @@
     "name": "90分简约头层小牛皮手包",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/95a6c3703ae3db2e8ccb3fc9e155f748.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7841",
@@ -468,6 +478,7 @@
     "name": "内胆包 13.3\"",
     "image_url": "//i8.mifile.cn/v1/a1/16867c76-4b13-9fe8-d2f3-f431b896fd6a.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "4256",
@@ -487,6 +498,7 @@
     "name": "移动电源2",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d75a2f3b510b1f003f9eef17e757fc7f.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7463",
@@ -507,6 +519,7 @@
     "name": "黑鲨游戏手机 高配版",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/ee44583e8167f3d250186069a26c1384.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7881",
@@ -526,6 +539,7 @@
     "name": "小米MIX 2S",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/33f7d4433f66a72e0a9c0d3f8021f023.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7760",
@@ -545,6 +559,7 @@
     "name": "小米8 6GB+64GB",
     "image_url": "//i8.mifile.cn/v1/a1/d597519c-5914-1658-5f2b-f5d2cbd915b8.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8146",
@@ -564,6 +579,7 @@
     "name": "小米8 青春版 4GB+64GB",
     "image_url": "//i8.mifile.cn/v1/a1/437dd6a8-3c6e-92f7-8a80-4fd1ec71eed1.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8797",
@@ -583,6 +599,7 @@
     "name": "小米8 屏幕指纹版 6GB内存",
     "image_url": "//i8.mifile.cn/v1/a1/96816d85-712b-074c-e849-d66d6d5ec4a2.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8802",
@@ -602,6 +619,7 @@
     "name": "小米8 SE 4GB+64GB",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/fb3fc5df8e762c4a96f0cdd59670070c.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8151",
@@ -621,6 +639,7 @@
     "name": "小米Max 2",
     "image_url": "//i8.mifile.cn/v1/a1/4db2d2d1-9200-5ad6-013b-997c8ab5253e.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5780",
@@ -640,6 +659,7 @@
     "name": "小米6X 4GB+64GB",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/cf8df89713342d51d01bff5ed1bced57.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7894",
@@ -659,6 +679,7 @@
     "name": "黑鲨游戏手柄",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/f91d57fc8685976628c26e9e799b1854.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8044",
@@ -678,6 +699,7 @@
     "name": "活塞耳机 ",
     "image_url": "//i8.mifile.cn/v1/a1/dad41422-a152-173c-07e2-d33fd29483d2.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5059",
@@ -697,6 +719,7 @@
     "name": "黑鲨游戏手机全面保护壳",
     "image_url": "//i8.mifile.cn/v1/a1/c99b112d-40d8-3bc2-3d43-4a08d77305a1.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8796",
@@ -716,6 +739,7 @@
     "name": "移动电源2C",
     "image_url": "//i8.mifile.cn/v1/a1/9c681f6b-b53b-cfe5-1fa6-30b627675a4a.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "6802",
@@ -736,6 +760,7 @@
     "name": "恒温电水壶",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/722cd1cea853d9b00b0c3219d0835d72.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "3556",
@@ -755,6 +780,7 @@
     "name": "米家石英表",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/7c90206cd0e0a2605d38e94a9cf82fcd.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8625",
@@ -774,6 +800,7 @@
     "name": "电水壶TDS检测笔套装",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/6b5fd5b4c7aa8251506b1fc57fc3bd9e.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7751",
@@ -793,6 +820,7 @@
     "name": "小米AI音箱",
     "image_url": "//i8.mifile.cn/v1/a1/0518c80c-a1a5-af45-0898-a4e07b3d5a9f.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "6334",
@@ -812,6 +840,7 @@
     "name": "小米无线充电器（通用快充版）",
     "image_url": "//i8.mifile.cn/v1/a1/b514112f-a031-8546-3fa7-fcc0d22f38b3.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8760",
@@ -831,6 +860,7 @@
     "name": "米家电动牙刷",
     "image_url": "//i8.mifile.cn/v1/a1/095e2d20-0a05-1649-7ffe-8f88e3e6c5b5.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "6103",
@@ -850,6 +880,7 @@
     "name": "Pinlo搅拌料理机",
     "image_url": "//i8.mifile.cn/v1/a1/e77bd05f-ca63-92be-69a5-b51fb3f5944e.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8784",
@@ -869,6 +900,7 @@
     "name": "贝医生声波电动牙刷",
     "image_url": "//i8.mifile.cn/v1/a1/3f0c9aaf-b2b4-e43e-ca44-3d0ba2941d75.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8828",
@@ -888,6 +920,7 @@
     "name": "小米手环3",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05d59f494c122b81d737a22e9125b89a.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8134",
@@ -907,6 +940,7 @@
     "name": "恒温电水壶TDS检测笔套装",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5a0780474253b37aa7d951c3423aeff0.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7750",
@@ -926,6 +960,7 @@
     "name": "米家电磁炉",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/0f045f786d9f4d8e83e28b236466a710.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7528",
@@ -945,6 +980,7 @@
     "name": "米兔指尖积木",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/806866db7cfac7efdb561e9d796b4a33.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7244",
@@ -965,6 +1001,7 @@
     "name": "15.6\"笔记本",
     "image_url": "//i8.mifile.cn/v1/a1/bd3675dd-b595-ff40-9e0d-3bcdfb0438b8.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8758",
@@ -984,6 +1021,7 @@
     "name": "13.3\" 四核i5 集显",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a114635f9596f33b74632bb1ac3c12ac.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7868",
@@ -1003,6 +1041,7 @@
     "name": "15.6\" 8代i7",
     "image_url": "//i8.mifile.cn/v1/a1/0f5dc643-183c-5bce-8de3-0f0829e9c3d5.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8648",
@@ -1022,6 +1061,7 @@
     "name": "15.6\" i5 MX150",
     "image_url": "//i8.mifile.cn/v1/a1/0033e1af-ee9b-45c0-293c-65b6d2846fe2.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "6783",
@@ -1041,6 +1081,7 @@
     "name": "小米Max 2",
     "image_url": "//i8.mifile.cn/v1/a1/4db2d2d1-9200-5ad6-013b-997c8ab5253e.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5780",
@@ -1060,6 +1101,7 @@
     "name": "小米8 青春版 6GB+128GB",
     "image_url": "//i8.mifile.cn/v1/a1/437dd6a8-3c6e-92f7-8a80-4fd1ec71eed1.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8799",
@@ -1079,6 +1121,7 @@
     "name": "小米8 6GB+64GB",
     "image_url": "//i8.mifile.cn/v1/a1/d597519c-5914-1658-5f2b-f5d2cbd915b8.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8146",
@@ -1098,6 +1141,7 @@
     "name": "小米平板4 Plus 10英寸 LTE版 128GB",
     "image_url": "//i8.mifile.cn/v1/a1/685330bb-cb82-c3c3-e3cf-106c9b9a70e6.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8750",
@@ -1117,6 +1161,7 @@
     "name": "小米小爱智能闹钟",
     "image_url": "//i8.mifile.cn/v1/a1/42f47ab9-c80e-d146-1822-e7ff3880b015.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8790",
@@ -1136,6 +1181,7 @@
     "name": "小米手环3",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05d59f494c122b81d737a22e9125b89a.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8134",
@@ -1155,6 +1201,7 @@
     "name": "小米无线鼠标",
     "image_url": "//i8.mifile.cn/v1/a1/beb1f30e-7a73-2598-f750-2d7a987ef446.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5434",
@@ -1174,6 +1221,7 @@
     "name": "小米无线鼠标",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/bff4c3ee3d141295afbfce75547612a6.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7864",
@@ -1194,6 +1242,7 @@
     "name": "电视4S 55英寸",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5879e63da2a64af293c914c642fbc154.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7809",
@@ -1213,6 +1262,7 @@
     "name": "55\"电视4 影院版",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/68791c12f66217b0eb7bde0a9d746596.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8602",
@@ -1232,6 +1282,7 @@
     "name": "55\"电视4S 曲面",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/1ead740b0b821cc3fe5f9f8161cc4fa3.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8037",
@@ -1251,6 +1302,7 @@
     "name": "电视4A 55\"",
     "image_url": "//i8.mifile.cn/v1/a1/fdfd5ed2-0cf1-105b-f36d-64eda9be242c.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "6634",
@@ -1270,6 +1322,7 @@
     "name": "电视4A 65\"",
     "image_url": "//i8.mifile.cn/v1/a1/b509d62f-a10a-6559-94f4-852b401815fb.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5353",
@@ -1289,6 +1342,7 @@
     "name": "电视4 65\"",
     "image_url": "//i8.mifile.cn/v1/a1/fc42f947-2c35-6a73-3805-63fd4c18e9cc.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "5892",
@@ -1308,6 +1362,7 @@
     "name": "小米电视4A 55英寸影院版",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/4d4713fae423a18a276220d6c632839e.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7912",
@@ -1327,6 +1382,7 @@
     "name": "小米电视4X 55英寸",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/1dc556d954f0bf0961cb292168e48470.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8111",
@@ -1346,6 +1402,7 @@
     "name": "电视4C",
     "image_url": "//i8.mifile.cn/v1/a1/57a93607-fee1-fabc-53b1-18129d39851a.webp",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "6628",
@@ -1365,6 +1422,7 @@
     "name": "55\"电视4C 影院版",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/0b90aa8e8a3dd80ed99673d9f3db2a1b.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "8601",
@@ -1384,6 +1442,7 @@
     "name": "小米电视4 75英寸",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/b17526d56cbad73cfc88d0be2d131f1c.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7799",
@@ -1403,6 +1462,7 @@
     "name": "小米电视音响",
     "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/f0ed6c9712b59561f24104553a206e3f.jpg",
     "color": "黑色",
+    "colorList": ["黑色", "白色", "红色", "蓝色", "星空灰","幻夜黑","极光蓝"],
     "action": {
       "type": "product",
       "path": "7808",
