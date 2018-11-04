@@ -1,55 +1,64 @@
 <template>
 	<div class="c_item">
-		<div class="item_img">
-			<img :src="json.imgSrc" alt="">
+		<div class="item_img" >
+			<img @click="details()" v-lazy="json.image_url" :src="json.image_url" alt="">
 		</div>
 		<div class="c_item_content">
-			<h3>{{json.title}}</h3>
-			<p class="comment">{{json.comment}}</p>
+			<h3>{{json.name}}</h3>
+			<p class="product_desc">{{json.product_desc}}</p>
 			<span><i>￥</i>{{json.price}}<a class="iconfont" @click="addToCart()">&#xe643;</a></span>
 		</div>
 	</div>
 </template>
 <script>
-	export default {
-		props: ["json"],
-		methods:{
-			addToCart(){
-				this.$emit("change",this.json);
-			}
-		}
-	}
+import store from "@/store/store.js";
+export default {
+  props: ["json", "index"],
+  methods: {
+    addToCart() {
+      this.$emit("change", this.json, this.index);
+    },
+    details() {
+	  this.$router.push("/details" + this.json.action.path);
+	  //用过vuex store传入当前数据
+	  store.state.detailsJson = this.json;
+    }
+  }
+};
 </script>
 <style lang="less">
-	.c_item {
-		line-height: 1.5;
-		.item_img {
-			box-sizing: border-box;
-			text-align: center;
-		}
-	}
-	.c_item_content {
-		padding: 0 15/12.5rem;
-		h3 {
-			font-size: 12/12.5rem;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-			color: #3a3a3a;
-		}
-		p {
-			color: #b3a7a7;
-		}
-		span {
-			color: #ff5722;
-			display: block;
-			height: 30/12.5rem;
-			line-height: 30/12.5rem;
-			.iconfont {
-				font-size: 20/12.5rem;
-				color: #ccc;
-				float: right;
-			}
-		}
-	}
+.c_item {
+  line-height: 1.5;
+  .item_img {
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+.c_item_content {
+  padding: 0 15/12.5rem;
+  h3 {
+    font-size: 12/12.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #3a3a3a;
+  }
+  p {
+    color: #b3a7a7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  span {
+    color: #ff5722;
+    display: block;
+    height: 30/12.5rem;
+    line-height: 30/12.5rem;
+    .iconfont {
+      font-size: 20/12.5rem;
+      color: #ccc;
+      float: right;
+    }
+  }
+}
 </style>

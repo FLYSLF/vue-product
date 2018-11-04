@@ -12,7 +12,7 @@
 			<div class="cla-Right">
 				<!--新品-->
 				<ClassifyC id="653" class="wear">
-						<router-link to="/Detailsc" slot="image">
+						<router-link to="/Detailsc1" slot="image">
 							<img  src="static/images/t1.jpg"/>
 						</router-link>
 				</ClassifyC>	
@@ -290,8 +290,12 @@
 </script>
 
 <style lang="less">
+	.audio{
+		
+
 	.content {
 		width: 100%;
+		margin-top: -3rem;
 		margin-bottom: 280/75rem;
 		border-top: 1px solid gainsboro;
 		width: 100%;
@@ -336,5 +340,7 @@
 			}*/
 		}
 	}
+	}
+	
 	/*内容右边部分结束*/
 </style>

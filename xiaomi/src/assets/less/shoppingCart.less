@@ -1,5 +1,6 @@
 .broadcast {
   text-align: left;
+  
 }
 // 头部
 .header {
@@ -11,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80/2/12.5rem;
+  height: 100/2/12.5rem;
   background: #f2f2f2;
   .back {
     position: absolute;
@@ -24,8 +25,6 @@
   .message {
     position: absolute;
     right: 20/2/12.5rem;
-    height: 100%;
-    line-height: 40/12.5rem;
     span {
       line-height: 80/2/12.5rem;
       color: #000;
@@ -118,7 +117,7 @@
     }
   }
   .collection {
-      width: 40%;
+    width: 40%;
     button {
       background: #ff6700;
       display: block;
@@ -129,19 +128,121 @@
     }
   }
   .more {
+    padding-bottom: 50/12.5rem;
+    overflow: hidden;
     .guessyoulike {
       /*background: url("../../assets/img/guessyoulike.jpg") no-repeat;*/
       /*background-size: 100%;*/
       /*height: 130/2/12.5rem;*/
       margin-bottom: 5/12.5rem;
     }
+    .m_footer{
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+      height: 80/12.5rem;
+      background: #f6f6f6;
+      line-height: 80/12.5rem;
+      color: #9a9191;
+      hr{
+        width: 30%;
+        margin: 0 20/12.5rem;
+        border: none;
+        height: 1px;
+        background: #bfb4b4;
+        display: inline-block;
+      }
+    }
+    
+  }
+  .pb100{
+    padding-bottom: 100/12.5rem;
   }
   .moreList {
     float: left;
     width: 50%;
     padding: 0 1%;
+    height:264px;
     box-sizing: border-box;
     .item {
     }
+  }
+}
+// 置顶
+#setTop{
+  position: fixed;
+  bottom: 17%;
+  opacity: 0;
+  right: 1%;
+  img{
+    width: 30px;
+  }
+}
+.setTopAnimate{
+  animation: setTopAnimate .3s linear both;
+}
+@keyframes setTopAnimate{
+  from{
+    transform: rotate(360deg) scale(0);
+  }
+  to{
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+//添加购物车成功
+.addCart{
+  width: 150/12.5rem;
+  height:100/12.5rem;
+  position: fixed;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 20/12.5rem;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:rgba(0,0,0,0.4);
+  color: #fff;
+  animation: addCartSucess .3s linear;
+  // transition: all 3s linear;
+  i{
+    font-size:30/12.5rem;
+  }
+  h3{
+    width: 100%;
+  }
+}
+@keyframes addCartSucess{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+//确认删除提示框
+.mint-msgbox-content{
+  // background: #ff6700;
+  border: none;
+}
+.mint-msgbox{
+  width:95%;
+  padding-bottom: 20px;
+}
+.mint-msgbox-message{
+  font-size: 14px;
+  height: 100px;
+  line-height: 100/12.5rem;
+}
+.mint-msgbox-btns{
+  padding: 0 10px;
+  button{
+    margin: 0 5px;
+  color: #6b6b6b;
+    border: 1px solid #ddd;
+  }
+  .mint-msgbox-confirm{
+    background: #ff5722;
+    color:#fff;
   }
 }

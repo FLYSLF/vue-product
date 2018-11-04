@@ -7,12 +7,21 @@ import './assets/css/reset.css'
 //引入axios和vue-axios
 import Axios from 'axios'
 import Vueaxios from 'vue-axios'
+
+import Mint from "mint-ui"
+import "mint-ui/lib/style.css"
+
+import Store from "./store/store"
+
+Vue.use(Mint);
+
 Vue.use(Vueaxios,Axios);
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  Store,
   components: { App },
   template: '<App/>',
   data: {
