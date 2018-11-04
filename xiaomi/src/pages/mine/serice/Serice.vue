@@ -91,7 +91,7 @@
 						border-bottom: 0.1rem solid white;
 						p{
 						text-align: left;
-							font-size: 1rem;
+							font-size: 1.1rem;
 						}
 						span:first-child{
 							float: left;

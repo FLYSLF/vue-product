@@ -157,6 +157,8 @@
 		margin: 0 auto;
 		.tab {
 			display: flex;
+			height: 4rem;
+    padding: 0 0.4rem;
 			a {
 				flex: 1;
 				-webkit-tap-highlight-color: rgba(255, 255, 255, 0);

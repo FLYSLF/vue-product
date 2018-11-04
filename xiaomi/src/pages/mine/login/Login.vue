@@ -82,6 +82,8 @@
 			margin: 1rem 0 0 0;
 			text-align: left;
 			font-family: "YaHei";
+			    font-size: 2rem;
+ 		   line-height: 4rem;
 		}
 		#yan{
 			position: relative;
@@ -106,7 +108,7 @@
 			border-bottom:0.1rem solid #cbc1c1;
 			margin-top: 1rem;
 			width: 100%;
-			height: 2rem;
+			height: 3rem;
 			outline: none;
 		}
 		.active{

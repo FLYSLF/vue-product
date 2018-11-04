@@ -4,7 +4,7 @@
 			<div class="mine-r clearfix">
 				<div class="mine-left">
 					<img src="@/assets/img/avatar.76a75b8f17.png" />
-					<span>登录/注册</span>
+					<span @click="spanClick()">登录/注册</span>
 					<i class="iconfont icon-iconfontzhizuobiaozhun023110"></i>
 				</div>
 			</div>
@@ -89,6 +89,9 @@
 			},
 			list() {
 				this.$router.push("/login")
+			},
+			spanClick(){
+				this.$router.push("/login")
 			}
 		},
 		created() {
@@ -99,8 +102,8 @@
 <style lang="less">
 	
 	.mine {
-		margin-top: 0rem;
-			height: 4rem;
+		margin-top: -3rem;
+			height: 8rem;
 		.list-stri{
 			background: #f7f5f5;
 		}
@@ -116,7 +119,7 @@
 		
 		.list {
 			width: 100%;
-			height: 3.5rem;
+			height: 4.5rem;
 			display: flex;
 			text-align: center;
 			justify-content: center;
@@ -156,6 +159,7 @@
 				span {
 					color: white;
 					float: left;
+					font-size: 1.3rem;
 					padding: 3rem 0 0 1rem;
 				}
 			}

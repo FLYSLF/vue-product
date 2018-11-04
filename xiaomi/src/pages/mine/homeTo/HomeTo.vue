@@ -3,8 +3,169 @@
 		<i class="iconfont  icon-xiaoyuhao" @click="ditu()"></i>
 		<div id="allmap" ref="allmap"></div>
 		<router-view></router-view>
-		<div @touchstart="start()" @touchmove="move()"  class="outerBox" :style="{top:top}">
-			
+		<div @touchstart="start()" @touchmove="move()" @touchend="end()" class="outerBox" :style="{top:top}">
+			<mt-navbar v-model="selected" >
+			 	 <mt-tab-item id="1" @click.stop="">选项一</mt-tab-item>
+				  <mt-tab-item id="2">选项二</mt-tab-item>
+				  <mt-tab-item id="3">选项三</mt-tab-item>
+			</mt-navbar>
+			  
+
+			<mt-tab-container v-model="selected">
+				  <mt-tab-container-item id="1">
+				   <ul class="touchstart">
+						<li>
+							<div>
+								<p>北京凌安信河店</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凌安信子站</p>
+							<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>河北华邦子站</p>
+							<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li><li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+					</ul>
+				  </mt-tab-container-item>
+				  <mt-tab-container-item id="2">
+				       <ul class="touchstart">
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li><li>
+							<div>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+							</div>
+						</li><li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li><li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li><li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li><li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+					</ul>
+				  </mt-tab-container-item>
+				  <mt-tab-container-item id="3">
+				       <ul class="touchstart">
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>北京凯达信子站</p>
+								<p>北京海淀区清河嘉园东1号楼 2层108</p>
+							</div>
+						</li>
+							<li>
+							<p>北京凯达信子站</p>
+							<p>北京海淀区清河嘉园东1号楼 2层108</p>
+						</li>
+							<li>
+							<p>北京凯达信子站</p>
+							<p>北京海淀区清河嘉园东1号楼 2层108</p>
+						</li>
+							<li>
+							<p>北京凯达信子站</p>
+							<p>北京海淀区清河嘉园东1号楼 2层108</p>
+						</li>	<li>
+							<p>北京凯达信子站</p>
+							<p>北京海淀区清河嘉园东1号楼 2层108</p>
+						</li>	<li>
+							<p>北京凯达信子站</p>
+							<p>北京海淀区清河嘉园东1号楼 2层108</p>
+						</li>
+					</ul>
+				  </mt-tab-container-item>
+			</mt-tab-container>
+
 		</div>
 	</div>
 </template>
@@ -15,10 +176,11 @@
 			return {
 				flags: false,
     			top: null,
-    			y:null,
-    			dy:null
-    			
-			}
+    			y:0,
+    			dy:0,
+    			my:0,
+    			selected:"1"
+			}	
 		},
 		methods: {
 			start(){
@@ -30,7 +192,6 @@
 			    }
 			    this.y = touch.clientY;
 			    this.dy = this.$el.children[2].offsetTop;
-			    console.log(this.$el.children[2].offsetTop)
 			},
 			move(){
 				var touch;
@@ -39,9 +200,37 @@
 			    }else {
 			        touch = event;
 			    }
-			    var my = touch.clientY;
-			    this.top = my-this.y + this.dy + "px";
-			    console.log(this.top)
+			    this.my = touch.clientY;
+			    this.top = this.my-this.y + this.dy + "px";
+			},
+			end(){
+			    if(this.my-this.y<0){
+			    	var leader=this.my;
+					var target=100;
+					var timer = setInterval(()=>{
+	                    leader = leader + (target - leader)/10;
+	                    if(Math.round(leader) == target){
+	                        leader = target;
+	                    }
+	                   this.top = leader + "px";
+	                    if(leader == target){
+	                        clearInterval(timer);
+	                    }
+	                },16)
+			    }else if(this.my-this.y>0){
+			    	var leader=this.my;
+					var target=437;
+					var timer = setInterval(()=>{
+		                leader = leader + (target - leader)/10;
+		                if(Math.round(leader) == target){
+		                    leader = target;
+		                }
+		               this.top = leader + "px";
+		                if(leader == target){
+		                    clearInterval(timer);
+		                }
+		            },16)
+			   }
 			},
 			ditu(){
 				this.$router.push("/mine")
@@ -70,24 +259,35 @@
 </script>
 
 <style lang="less">
-	/*#app::-webkit-scrollbar {display:none};*/
+	.touchstart{
+		text-align: left;
+		li{
+			box-sizing: border-box;
+			height: 5rem;
+			border-bottom: 1px solid #ddd;
+			display: flex;
+			align-items: center;
+		}
+	}
 	.hometo{
 		overflow: hidden;
 		position: relative;
+		margin-top: -3rem;
 		&::-webkit-scrollbar {display:none};
 		
 	}
 	.outerBox{
 		width:80%;
-		margin: 0 10%;
+		margin: 0 5%;
 		height: 50rem;
-		background-color: yellowgreen;
+		background: white;
+		padding-left: 2rem;
 		position: absolute;
 		top: 35rem;
 	}
 	
 	#allmap {
-		height: 40rem;
+		height: 53.2rem;
 		overflow: hidden;
 		margin-top: 0rem;
 	}

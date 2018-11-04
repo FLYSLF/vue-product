@@ -19,6 +19,9 @@
 			TopSearch,
 			Nav,
 			Swiper
+		},
+		created(){
+			this.$emit("tabbar_shows",true)
 		}
 	}
 </script>
