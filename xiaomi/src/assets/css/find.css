@@ -7,6 +7,7 @@ a {
   text-decoration: none;
 }
 .li-fin img {
+  display: flex;
   width: 100%;
 }
 .li-fin {
@@ -93,10 +94,12 @@ a {
 }
 .miaosha .foot-a .fl-a {
   font-size: 0.48rem;
+  float: left;
   color: #ccc;
 }
 .miaosha .foot-a .fr-a {
   font-size: 0.48rem;
+  float: right;
   margin-right: 0.8rem;
   color: #ccc;
 }
@@ -153,7 +156,7 @@ a {
   height: 20rem;
 }
 .puality .imgs h5 {
-  margin-left: 5px;
+  margin-left: 0.4rem;
 }
 .LED .inte {
   width: 50%;
@@ -165,10 +168,10 @@ a {
   height: 16rem;
 }
 .LED .inte h5 {
-  margin-left: 5px;
+  margin-left: 0.4rem;
 }
 .LED .inte span {
-  margin-left: 5px;
+  margin-left: 0.4rem;
   margin-top: 0.4rem;
   color: red;
 }
@@ -182,7 +185,7 @@ a {
   height: 16rem;
 }
 .LED .router h5 {
-  margin-left: 5px;
+  margin-left: 0.4rem;
 }
 .LED .router span {
   color: red;
@@ -201,10 +204,10 @@ a {
   height: 16rem;
 }
 .LED .plate h5 {
-  margin-left: 5px;
+  margin-left: 0.4rem;
 }
 .LED .plate span {
-  margin-left: 5px;
+  margin-left: 0.4rem;
   margin-top: 0.4rem;
   color: red;
 }
@@ -214,20 +217,20 @@ a {
   flex-wrap: wrap;
 }
 .travel h2 {
-  margin-top: 10px;
+  margin-top: 0.8rem;
   margin-left: 0.4rem;
   color: #939393;
 }
 .travel .recorder {
   width: 50%;
-  height: 240px;
+  height: 19.2rem;
 }
 .travel .recorder img {
   margin-top: 0.4rem;
   width: 100%;
 }
 .travel .recorder span {
-  margin-left: 5px;
+  margin-left: 0.4rem;
   margin-top: 0.4rem;
   color: red;
 }
@@ -245,7 +248,7 @@ a {
   width: 100%;
 }
 .travel .source span {
-  margin-left: 5px;
+  margin-left: 0.4rem;
   margin-top: 0.4rem;
   color: red;
 }

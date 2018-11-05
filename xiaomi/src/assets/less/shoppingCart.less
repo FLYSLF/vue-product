@@ -1,5 +1,6 @@
 .broadcast {
   text-align: left;
+  
 }
 // 头部
 .header {
@@ -11,59 +12,57 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80/2px;
+  height: 100/2/12.5rem;
   background: #f2f2f2;
   .back {
     position: absolute;
-    left: 20/2px;
+    left: 20/2/12.5rem;
     img {
-      width: 40/2px;
-      height: 40/2px;
+      width: 40/2/12.5rem;
+      height: 40/2/12.5rem;
     }
   }
   .message {
     position: absolute;
-    right: 20/2px;
-    height: 100%;
-    line-height: 40px;
+    right: 20/2/12.5rem;
     span {
-      line-height: 80/2px;
+      line-height: 80/2/12.5rem;
       color: #000;
-      padding: 0 18/2px;
+      padding: 0 18/2/12.5rem;
     }
     i {
       position: relative;
-      top: 5/2px;
+      top: 5/2/12.5rem;
       color: #939393;
-      font-size: 40/2px;
+      font-size: 40/2/12.5rem;
     }
   }
   .title {
-    font-size: 30/2px;
+    font-size: 30/2/12.5rem;
   }
 }
 
 .broadcast {
   .content {
     text-align: left;
-    margin-top: 45px;
+    margin-top: 45/12.5rem;
     //购物车为空的状态
     .empry{
         display:flex;
         align-items: center;
         justify-content: center;
-        height: 60px;
+        height: 60/12.5rem;
         color: #bdbdbd;
         i{
-            font-size: 20px;
+            font-size: 20/12.5rem;
             color: #bdbdbd;
-            padding: 0 10px;
+            padding: 0 10/12.5rem;
         }
         button{
-            border: 1px solid #ccc;
+            border: 1/12.5rem solid #ccc;
             background: none;
-            padding: 5px;
-            margin-left: 10px;
+            padding: 5/12.5rem;
+            margin-left: 10/12.5rem;
             outline: none;
         }
     }
@@ -72,30 +71,30 @@
     width: 100%;
     display: flex;
     position: fixed;
-    bottom: 100/2px;
-    height: 100/2px;
-    line-height: 100/2px;
+    bottom: 100/2/12.5rem;
+    height: 100/2/12.5rem;
+    line-height: 100/2/12.5rem;
     background: #fff;
   }
   .check {
-    padding: 0 30/2px;
+    padding: 0 30/2/12.5rem;
     img {
-      width: 40/2px;
+      width: 40/2/12.5rem;
     }
   }
   .total {
-    margin-left: 60/2px;
+    margin-left: 60/2/12.5rem;
     span {
       color: #ff5722;
       display: inline-block;
       position: relative;
-      padding: 0 20/2px;
-      font-size: 30/2px;
+      padding: 0 20/2/12.5rem;
+      font-size: 30/2/12.5rem;
       i {
         position: absolute;
-        bottom: 5/2px;
+        bottom: 5/2/12.5rem;
         height: 100%;
-        font-size: 15/2px;
+        font-size: 15/2/12.5rem;
         left: 0;
       }
     }
@@ -118,7 +117,7 @@
     }
   }
   .collection {
-      width: 40%;
+    width: 40%;
     button {
       background: #ff6700;
       display: block;
@@ -129,19 +128,64 @@
     }
   }
   .more {
+    padding-bottom: 50/12.5rem;
+    overflow: hidden;
     .guessyoulike {
       /*background: url("../../assets/img/guessyoulike.jpg") no-repeat;*/
       /*background-size: 100%;*/
-      /*height: 130/2px;*/
-      margin-bottom: 5px;
+      /*height: 130/2/12.5rem;*/
+      margin-bottom: 5/12.5rem;
     }
+    .m_footer{
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+      height: 80/12.5rem;
+      background: #f6f6f6;
+      line-height: 80/12.5rem;
+      color: #9a9191;
+      hr{
+        width: 30%;
+        margin: 0 20/12.5rem;
+        border: none;
+        height: 1px;
+        background: #bfb4b4;
+        display: inline-block;
+      }
+    }
+    
+  }
+  .pb100{
+    padding-bottom: 100/12.5rem;
   }
   .moreList {
     float: left;
     width: 50%;
     padding: 0 1%;
+    height:264px;
     box-sizing: border-box;
     .item {
     }
+  }
+}
+#setTop{
+  position: fixed;
+  bottom: 17%;
+  opacity: 0;
+  right: 1%;
+  img{
+    width: 30px;
+  }
+}
+.setTopAnimate{
+  animation: setTopAnimate .3s linear both;
+}
+@keyframes setTopAnimate{
+  from{
+    transform: rotate(360deg) scale(0);
+  }
+  to{
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
   }
 }

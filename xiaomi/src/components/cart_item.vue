@@ -1,21 +1,21 @@
 <template>
 	<div class="c_item">
-		<div class="item_img">
-			<img :src="json.imgSrc" alt="">
+		<div class="item_img" >
+			<img v-lazy="json.image_url" :src="json.image_url" alt="">
 		</div>
 		<div class="c_item_content">
-			<h3>{{json.title}}</h3>
-			<p class="comment">{{json.comment}}</p>
+			<h3>{{json.name}}</h3>
+			<p class="product_desc">{{json.product_desc}}</p>
 			<span><i>￥</i>{{json.price}}<a class="iconfont" @click="addToCart()">&#xe643;</a></span>
 		</div>
 	</div>
 </template>
 <script>
 	export default {
-		props: ["json"],
+		props: ["json","index"],
 		methods:{
 			addToCart(){
-				this.$emit("change",this.json);
+				this.$emit("change",this.json,this.index);
 			}
 		}
 	}
@@ -29,9 +29,9 @@
 		}
 	}
 	.c_item_content {
-		padding: 0 15px;
+		padding: 0 15/12.5rem;
 		h3 {
-			font-size: 12px;
+			font-size: 12/12.5rem;
 			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: nowrap;
@@ -39,14 +39,17 @@
 		}
 		p {
 			color: #b3a7a7;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
 		}
 		span {
 			color: #ff5722;
 			display: block;
-			height: 30px;
-			line-height: 30px;
+			height: 30/12.5rem;
+			line-height: 30/12.5rem;
 			.iconfont {
-				font-size: 20px;
+				font-size: 20/12.5rem;
 				color: #ccc;
 				float: right;
 			}

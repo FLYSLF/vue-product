@@ -18,7 +18,14 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 //配置接口
 var express = require("express");
 var app = express();
-var listData = require("../src/data/find_item");
+
+var find_itemData = require("../src/data/find_item");
+
+var listData = require("../src/listdata.json");
+var serice = require("../src/data/Serice1.json");
+//购物车更多 json数据
+var cart_itemData = require("../src/data/cart_item.json");
+
 var apiRoutes = express.Router();
 app.use("/api",apiRoutes);
 
@@ -34,12 +41,22 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   	before(app){
   		app.get("/api/find_item",function(req,res){
   			res.json({
-  				data:listData
+  				data:find_itemData
   			});
   		});
-  	},
+  		app.get("/api/serice",function(req,res){
+  			res.json({
+  				data:serice
+  			});
+  		});
+      app.get("/api/cartData",function(req,res){
+  			res.json({
+  				data:cart_itemData
+  			});
+      });
+    },
     clientLogLevel: 'warning',
-    historyApiFallback: {
+    historyApiFallback:{
       rewrites: [
         { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
       ],
@@ -83,7 +100,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     ])
   ]
 })
-
 module.exports = new Promise((resolve, reject) => {
   portfinder.basePort = process.env.PORT || config.dev.port
   portfinder.getPort((err, port) => {
