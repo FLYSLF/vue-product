@@ -19,9 +19,9 @@ export default {
       this.$emit("change", this.json, this.index);
     },
     details() {
-	  this.$router.push("/details" + this.json.action.path);
-	  //用过vuex store传入当前数据
-	  store.state.detailsJson = this.json;
+      this.$router.push("/details" + this.json.action.path);
+      //通过过vuex store传入当前数据
+      store.state.detailsJson = this.json;
     }
   }
 };
@@ -32,6 +32,9 @@ export default {
   .item_img {
     box-sizing: border-box;
     text-align: center;
+  }
+  img[lazy=loading]{
+    background:transparent;
   }
 }
 .c_item_content {

@@ -1,0 +1,309 @@
+[
+  {
+    "image_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/dd4e70d66276839ed73d9a9b897d4859.jpg",
+    "image_url_webp": "http://i8.mifile.cn/v1/a1/6825ccb2-37f0-f72c-d2ac-92fbbad91120.webp",
+    "is_multi_price": false,
+    "market_price": "289",
+    "name": "悦米机械键盘 ",
+    "price": "289",
+    "product_id": 5499
+  },
+  {
+    "image_url": "https://i8.mifile.cn/b2c-mimall-media/d67b10a1ab4a6a3d4bdc7c32d5493954.jpg",
+    "image_url_webp": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d67b10a1ab4a6a3d4bdc7c32d5493954.jpg",
+    "is_multi_price": false,
+    "market_price": "599",
+    "name": "机械键盘Pro静音版",
+    "price": "599",
+    "product_id": 7865
+  },
+  {
+    "image_url": "https://i8.mifile.cn/b2c-mimall-media/53b7ca5d69744a66e71104be29109132.jpg",
+    "image_url_webp": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/53b7ca5d69744a66e71104be29109132.jpg",
+    "is_multi_price": false,
+    "market_price": "399",
+    "name": "双肩包",
+    "price": "399",
+    "product_id": 7899
+  },
+  {
+    "image_url": "https://i8.mifile.cn/b2c-mimall-media/9d0118dcbf5444b733fa3800570a5534.jpg",
+    "image_url_webp": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/9d0118dcbf5444b733fa3800570a5534.jpg",
+    "is_multi_price": false,
+    "market_price": "129",
+    "name": "小米USB-C电源适配器",
+    "price": "129",
+    "product_id": 8102
+  },
+  {
+    "image_url": "http://i8.mifile.cn/b2c-mimall-media/949acfbd2475cc9b76d63d259c5894a4.jpg",
+    "image_url_webp": "http://i8.mifile.cn/v1/a1/ba2adc38-e265-c131-9a62-b3c896c68113.webp",
+    "is_multi_price": false,
+    "market_price": "199",
+    "name": "多功能转接器",
+    "price": "199",
+    "product_id": 6815
+  },
+  {
+    "image_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/c01573cec4d3363d7efd511cbf7cfbc1.jpg",
+    "image_url_webp": "http://i8.mifile.cn/v1/a1/0a3dd887-a1ff-a6f1-9943-105d873a6fef.webp",
+    "is_multi_price": false,
+    "market_price": "149",
+    "name": "笔记本转接器",
+    "price": "149",
+    "product_id": 4117
+  },
+  {
+    "image_url": "http://i8.mifile.cn/b2c-mimall-media/07855602fac2eed999563c7e3d232d5c.jpg",
+    "image_url_webp": "http://i8.mifile.cn/v1/a1/909aafaa-cba9-e2ad-4ce2-ff9466724a37.webp",
+    "is_multi_price": false,
+    "market_price": "149",
+    "name": "多功能转接器 ",
+    "price": "149",
+    "product_id": 5770
+  },
+  {
+    "image_url": "http://i8.mifile.cn/b2c-mimall-media/581ce3c8db4a0f8222696e0781c4b7f1.jpg",
+    "image_url_webp": "http://i8.mifile.cn/v1/a1/82151cc2-f2a5-2082-ef0e-113b9fab9053.webp",
+    "is_multi_price": false,
+    "market_price": "39",
+    "name": "防水鼠标垫",
+    "price": "39",
+    "product_id": 6214
+  },
+  {
+    "image_url": "https://i8.mifile.cn/b2c-mimall-media/4129b69c08a63600fd04bd7e5cf4a9ee.jpg",
+    "image_url_webp": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/4129b69c08a63600fd04bd7e5cf4a9ee.jpg",
+    "is_multi_price": false,
+    "market_price": "249",
+    "name": "小米时尚通勤双肩包",
+    "price": "249",
+    "product_id": 8117
+  },
+  {
+    "image_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/8873564985f8151acdbef39e48ab316c.jpg",
+    "image_url_webp": "http://i8.mifile.cn/v1/a1/6411c848-8ff9-1cbc-ede5-b46593788ea2.webp",
+    "is_multi_price": true,
+    "market_price": "49",
+    "name": "金属鼠标垫",
+    "price": "49",
+    "product_id": 1719
+  },
+
+  {
+    "product_id": "7565",
+    "commodity_id": "7565",
+    "name": "12.5\" M3 128G",
+    "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/19a01dfb52bd52d9a3654eab319b457e.jpg",
+    "action": {
+      "type": "product",
+      "path": "7565",
+      "log_code": "recom_product_12-0#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=7565",
+      "recommend_code": "recom_product_12-0#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=7565"
+    },
+    "big_image_url": "",
+    "price": "3599",
+    "market_price": "3599",
+    "product_desc": "轻薄长续航，超窄边框",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "8759",
+    "commodity_id": "8759",
+    "name": "15.6\"笔记本",
+    "image_url": "//i8.mifile.cn/v1/a1/bd3675dd-b595-ff40-9e0d-3bcdfb0438b8.webp",
+    "action": {
+      "type": "product",
+      "path": "8759",
+      "log_code": "recom_product_12-1#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=8759",
+      "recommend_code": "recom_product_12-1#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=8759"
+    },
+    "big_image_url": "",
+    "price": "4199",
+    "market_price": "4199",
+    "product_desc": "全面均衡的国民轻薄本",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "6783",
+    "commodity_id": "6783",
+    "name": "15.6\" i5 MX150",
+    "image_url": "//i8.mifile.cn/v1/a1/0033e1af-ee9b-45c0-293c-65b6d2846fe2.webp",
+    "action": {
+      "type": "product",
+      "path": "6783",
+      "log_code": "recom_product_12-2#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=6783",
+      "recommend_code": "recom_product_12-2#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=6783"
+    },
+    "big_image_url": "",
+    "price": "5599",
+    "market_price": "5599",
+    "product_desc": "更强悍的专业笔记本",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "7868",
+    "commodity_id": "7868",
+    "name": "13.3\" 四核i5 集显",
+    "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a114635f9596f33b74632bb1ac3c12ac.jpg",
+    "action": {
+      "type": "product",
+      "path": "7868",
+      "log_code": "recom_product_12-3#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=7868",
+      "recommend_code": "recom_product_12-3#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=7868"
+    },
+    "big_image_url": "",
+    "price": "4999",
+    "market_price": "4999",
+    "product_desc": "轻薄全金属机身，256GB SSD",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "8648",
+    "commodity_id": "8648",
+    "name": "15.6\" 8代i7",
+    "image_url": "//i8.mifile.cn/v1/a1/0f5dc643-183c-5bce-8de3-0f0829e9c3d5.webp",
+    "action": {
+      "type": "product",
+      "path": "8648",
+      "log_code": "recom_product_12-4#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=8648",
+      "recommend_code": "recom_product_12-4#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=8648"
+    },
+    "big_image_url": "",
+    "price": "8999",
+    "market_price": "8999",
+    "product_desc": "性能怪兽 信仰级游戏体验",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "7894",
+    "commodity_id": "7894",
+    "name": "小米6X 4GB+64GB",
+    "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/cf8df89713342d51d01bff5ed1bced57.jpg",
+    "action": {
+      "type": "product",
+      "path": "7894",
+      "log_code": "recom_product_12-5#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=7894",
+      "recommend_code": "recom_product_12-5#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=7894"
+    },
+    "big_image_url": "",
+    "price": "1299",
+    "market_price": "1599",
+    "product_desc": "轻薄美观的拍照手机",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "8750",
+    "commodity_id": "8750",
+    "name": "小米平板4 Plus 10英寸 LTE版 128GB",
+    "image_url": "//i8.mifile.cn/v1/a1/685330bb-cb82-c3c3-e3cf-106c9b9a70e6.webp",
+    "action": {
+      "type": "product",
+      "path": "8750",
+      "log_code": "recom_product_12-6#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=8750",
+      "recommend_code": "recom_product_12-6#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=8750"
+    },
+    "big_image_url": "",
+    "price": "2099",
+    "market_price": "2099",
+    "product_desc": "8620mAh大电量，超长续航",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "4679",
+    "commodity_id": "4679",
+    "name": "小米便携鼠标",
+    "image_url": "//i8.mifile.cn/v1/a1/1d989f2e-a78c-da15-11e3-b44622a319f5.webp",
+    "action": {
+      "type": "product",
+      "path": "4679",
+      "log_code": "recom_product_12-7#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=4679",
+      "recommend_code": "recom_product_12-7#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=4679"
+    },
+    "big_image_url": "",
+    "price": "99",
+    "market_price": "99",
+    "product_desc": "轻薄便携，含电池仅重77.5g\r\n",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "5434",
+    "commodity_id": "5434",
+    "name": "小米无线鼠标",
+    "image_url": "//i8.mifile.cn/v1/a1/beb1f30e-7a73-2598-f750-2d7a987ef446.webp",
+    "action": {
+      "type": "product",
+      "path": "5434",
+      "log_code": "recom_product_12-8#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=5434",
+      "recommend_code": "recom_product_12-8#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=5434"
+    },
+    "big_image_url": "",
+    "price": "69",
+    "market_price": "69",
+    "product_desc": "把舒服握在手里",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "7864",
+    "commodity_id": "7864",
+    "name": "小米无线鼠标",
+    "image_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/bff4c3ee3d141295afbfce75547612a6.jpg",
+    "action": {
+      "type": "product",
+      "path": "7864",
+      "log_code": "recom_product_12-9#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=7864",
+      "recommend_code": "recom_product_12-9#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=7864"
+    },
+    "big_image_url": "",
+    "price": "49",
+    "market_price": "49",
+    "product_desc": "办公、生活的省心拍档",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "4132",
+    "commodity_id": "4132",
+    "name": "内胆包  12.5\"",
+    "image_url": "//i8.mifile.cn/v1/a1/16867c76-4b13-9fe8-d2f3-f431b896fd6a.webp",
+    "action": {
+      "type": "product",
+      "path": "4132",
+      "log_code": "recom_product_12-10#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=4132",
+      "recommend_code": "recom_product_12-10#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=4132"
+    },
+    "big_image_url": "",
+    "price": "49",
+    "market_price": "49",
+    "product_desc": "至简纤薄 轻松随行无压力",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  },
+  {
+    "product_id": "1719",
+    "commodity_id": "1719",
+    "name": "金属鼠标垫",
+    "image_url": "//i8.mifile.cn/v1/a1/6411c848-8ff9-1cbc-ede5-b46593788ea2.webp",
+    "action": {
+      "type": "product",
+      "path": "1719",
+      "log_code": "recom_product_12-11#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=1719",
+      "recommend_code": "recom_product_12-11#eid=24:0:0:0:0:0:0:0:0:0&tid=DetailRec-78cpaAwFqwUTL0eVFuqCzg==&page=product&pid=1719"
+    },
+    "big_image_url": "",
+    "price": "49",
+    "market_price": "49",
+    "product_desc": "航空铝合金 专业之选",
+    "trace_id": "DetailRec-78cpaAwFqwUTL0eVFuqCzg==",
+    "eid": "24:0:0:0:0:0:0:0:0:0"
+  }
+]

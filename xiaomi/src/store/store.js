@@ -4,7 +4,8 @@ Vue.use(Vuex);
 let store = new Vuex.Store({
 	state:{
 		tabbarFlag:true,
-		detailsJson:""
+		detailsJson:"",
+		cartNum:0
 
 	}
 });

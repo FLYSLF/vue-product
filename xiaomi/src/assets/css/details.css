@@ -1,6 +1,9 @@
 .detail {
   margin-top: -3rem;
 }
+.detail img[lazy=loading] {
+  background: #fff;
+}
 .detail .d-header {
   padding: 0.8rem;
   background: transparent;
@@ -168,4 +171,110 @@
 }
 .detail .comment .replay span {
   color: #ff6700;
+}
+.detail .comment .moreComment {
+  text-align: center;
+  font-size: 1.28rem;
+  margin-top: 0.8rem;
+  border-bottom: 0.07974482rem solid #fafafa;
+  padding-bottom: 1.6rem;
+}
+.detail .comment .moreComment a {
+  display: block;
+  color: #4e72a5;
+  font-weight: 400;
+}
+.detail .sp-detail h3 {
+  margin-bottom: 1.19617225rem;
+  text-align: center;
+  color: #ff6700;
+}
+.detail .moreGoods {
+  padding-right: 1.59489633rem;
+  box-sizing: border-box;
+}
+.detail .moreGoods h2 {
+  padding-left: 1.59489633rem;
+  font-size: 1.9138756rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 3.18979266rem;
+}
+.detail .moreGoods .goods-item {
+  height: 22 0rem;
+  width: 50%;
+  float: left;
+  padding-left: 1.59489633rem;
+  box-sizing: border-box;
+  margin-bottom: 1.19617225rem;
+}
+.detail .moreGoods .goods-item img {
+  border-radius: 1.19617225rem;
+}
+.detail .moreGoods .goods-item h4 {
+  color: #000;
+  padding-top: 0.79744817rem;
+  font-weight: 400;
+  text-indent: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.detail .moreGoods .goods-item p {
+  text-indent: 1rem;
+  color: #ff6700;
+}
+.detail footer {
+  padding: 0 0.66491228rem 0.66491228rem;
+  background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.detail footer .footer {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  width: 100%;
+  height: 4.16172249rem;
+  border: 0.07974482rem solid #e5e5e5;
+  border-radius: 1.19617225rem;
+  overflow: hidden;
+  box-shadow: 0 0.15948963rem 0.31897927rem -0.07974482rem rgba(0, 0, 0, 0.2), 0 0.31897927rem 0.39872408rem rgba(0, 0, 0, 0.14), 0 0.07974482rem 0.79744817rem rgba(0, 0, 0, 0.12);
+}
+.detail footer .footer a {
+  display: block;
+  position: relative;
+  color: rgba(0, 0, 0, 0.54);
+  margin-left: 2.3923445rem;
+}
+.detail footer .footer a i {
+  display: block;
+  font-size: 1.99362041rem;
+}
+.detail footer .footer a .num {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.19617225rem;
+  height: 1.19617225rem;
+  font-size: 0.9569378rem;
+  background: #ff6700;
+  color: #fff;
+  line-height: 1.19617225rem;
+  border-radius: 100%;
+}
+.detail footer .footer .action-box {
+  margin-left: 5.58213716rem;
+}
+.detail footer .footer .action-box a {
+  background: #ff6700;
+  color: #fff;
+  text-align: center;
+  padding: 0 1.99362041rem;
+  height: 2.63157895rem;
+  line-height: 2.63157895rem;
+  border-radius: 1.19617225rem;
 }

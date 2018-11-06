@@ -22,6 +22,10 @@ var serice = require("../src/data/Serice1.json");
 var cart_itemData = require("../src/data/cart_item.json");
 //详情评论数据
 var details_comment = require("../src/data/details_comment.json");
+//详情图片
+var details_img = require("../src/data/details_img.json");
+//更多推荐
+var details_more = require("../src/data/details_more.json");
 var apiRoutes = express.Router();
 app.use("/api",apiRoutes);
 
@@ -53,6 +57,16 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       app.get("/api/detailsComment",function(req,res){
   			res.json({
   				data:details_comment
+  			});
+      });
+      app.get("/api/detailImg",function(req,res){
+  			res.json({
+  				data:details_img
+  			});
+      });
+      app.get("/api/detailMore",function(req,res){
+  			res.json({
+  				data:details_more
   			});
       });
   	},
