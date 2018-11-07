@@ -245,7 +245,7 @@
 			}
 		},
 		mounted() {
-			this.axios.get("/api/find_item").then((res) => {
+			this.axios.get("/api/findItem").then((res) => {
 				this.arr = res.data.data;
 				console.log(this.arr)
 			})

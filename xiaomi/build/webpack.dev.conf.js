@@ -51,7 +51,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   				data:listData
   			});
   		});
-  		app.get("/api/find_item",function(req,res){
+  		app.get("/api/findItem",function(req,res){
   			res.json({
   				data:find_itemData
   			});

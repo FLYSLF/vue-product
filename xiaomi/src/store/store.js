@@ -5,7 +5,7 @@ let store = new Vuex.Store({
 	state:{
 		tabbarFlag:true,
 		detailsJson:"",
-		cartNum:0,
+		cartNum:2,
 		cartFoodsList:[
 			{
 				flag: true,
