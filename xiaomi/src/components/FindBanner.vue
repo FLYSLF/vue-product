@@ -38,11 +38,8 @@
 <style lang="less">
 	/*	css引入*/
 	@import "../assets/lib/swiper/css/swiper.css";
-	.banner {
-		height: 150/2px;
-	}
 	.banner img {
-		height: 300/2px;
+		height: 150/12.5rem;
 		width: 100%;
 	}
 </style>

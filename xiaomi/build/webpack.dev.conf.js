@@ -13,19 +13,26 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+
+ 
 //配置接口
 var express = require("express");
 var app = express();
+
+var find_itemData = require("../src/data/find_item");
+
 var listData = require("../src/listdata.json");
 var serice = require("../src/data/Serice1.json");
 //购物车更多 json数据
 var cart_itemData = require("../src/data/cart_item.json");
+
 //详情评论数据
 var details_comment = require("../src/data/details_comment.json");
 //详情图片
 var details_img = require("../src/data/details_img.json");
 //更多推荐
 var details_more = require("../src/data/details_more.json");
+
 var apiRoutes = express.Router();
 app.use("/api",apiRoutes);
 
@@ -39,9 +46,14 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // these devServer options should be customized in /config/index.js
   devServer: {
   	before(app){
-  		app.get("/api/listData",function(req,res){
+  		app.get("/api/listdata",function(req,res){
   			res.json({
   				data:listData
+  			});
+  		});
+  		app.get("/api/find_item",function(req,res){
+  			res.json({
+  				data:find_itemData
   			});
   		});
   		app.get("/api/serice",function(req,res){

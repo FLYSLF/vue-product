@@ -16,6 +16,7 @@ import Store from "./store/store"
 Vue.use(Mint);
 
 Vue.use(Vueaxios,Axios);
+
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({

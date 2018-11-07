@@ -216,9 +216,8 @@
 		mounted(){
 			//访问接口
 			//var That = this;
-			this.axios.get("/api/listdata").then((res)=>{
-				
-				this.list_min = res.data.data.data
+			this.axios.get("/api/listdata").then((res)=>{		
+				this.list_min = res.data.data.data;
 				this.arr = this.list_min[0]
 				this.arr1 = this.list_min[1]
 				this.arr2 = this.list_min[2]
