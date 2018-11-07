@@ -25,6 +25,7 @@ import Two from "@/pages/mine/two/Two"
 
 import Classify from '@/pages/classify/Classify'
 import Find from '@/pages/find/Find'
+import FindMifen from '@/pages/find/FindMifen'
 import ShoppingCart from '@/pages/shoppingCart/ShoppingCart'
 import Mine from '@/pages/mine/Mine'
 export default new Router({
@@ -103,6 +104,11 @@ export default new Router({
       path: '/find',
       name: 'Find',
       component: Find
+    },
+    {
+    	path:'/FindMifen',
+    	name:'FindMifen',
+    	component: FindMifen
     },
     {
       path: '/shoppingCart',

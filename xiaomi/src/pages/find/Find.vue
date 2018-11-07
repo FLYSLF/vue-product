@@ -1,5 +1,5 @@
 <template>
-	<div class="find" style="height: ;">
+	<div class="find">
 		<Myheader>
 			<img slot="leftImg" src="../../assets/img/footerNavImg/001.png" />
 			<img slot="rightImg" src="../../assets/img/footerNavImg/002.png" />
@@ -9,11 +9,36 @@
 			<Banner></Banner>
 		</div>
 		<div class="li-fin">
-			<a class="fr"><img src="../../assets/img/li1.jpg" /></a>
-			<a class="fr"><img src="../../assets/img/li2.jpg" /></a>
-			<a class="fr"><img src="../../assets/img/li3.jpg" /></a>
-			<a class="fr"><img src="../../assets/img/li4.jpg" /></a>
-			<a class="fr"><img src="../../assets/img/li5.jpg" /></a>
+			<router-link class="fr" to="/FindMifen">
+				<div>	
+				<img src="../../assets/img/a1.png" />
+				<span>小米礼品卡</span>
+				</div>
+			</router-link>
+			<a class="fr">
+				<div>
+				<img src="../../assets/img/a2.png" />
+				<span>小米闪购</span>
+				</div>
+			</a>
+			<a class="fr">
+				<div>
+				<img src="../../assets/img/a3.png" />
+				<span>好友拼团</span>
+				</div>
+			</a>
+			<a class="fr">
+				<div>
+				<img src="../../assets/img/a4.png" />
+				<span>小米分期</span>
+				</div>
+			</a>
+			<a class="fr">
+				<div>
+				<img src="../../assets/img/a5.png" />
+				<span>小米信用卡</span>
+				</div>
+			</a>
 		</div>
 		<div class="mijia">
 			<div class="fl">
