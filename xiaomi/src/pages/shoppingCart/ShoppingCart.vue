@@ -70,26 +70,7 @@ export default {
   },
   data() {
     return {
-      goodsList: [
-        {
-          flag: true,
-          name: "小米MIX 3 8GB+256G",
-          color: "流沙金",
-          "colorList": ["黑色", "白色", "红色", "蓝色", "流沙金"],
-          image_url: require("../../assets/img/hongmi6.jpg"),
-          price: 749,
-          sum: 1
-        },
-        {
-          flag: true,
-          name: "小米手环3 NFC版",
-          color: "黑色",
-          "colorList": ["黑色", "白色", "红色", "蓝色", "流沙金"],
-          image_url: require("../../assets/img/shouhuang3.png"),
-          price: 199,
-          sum: 1
-        }
-      ],
+      // goodsList: [],
       moreList: [],
       allcheck: true,
       deleteFlag: false,
@@ -113,6 +94,9 @@ export default {
     store.state.tabbarFlag = true;
   },
   computed: {
+    goodsList(){
+      return store.state.cartFoodsList;
+    },
     //判断商品是否所有都勾选 勾选则切换全选状态
     checkto() {
       var len = this.goodsList.length;
@@ -209,11 +193,14 @@ export default {
     //置顶
     settop() {
       var timer = setInterval(() => {
-        document.documentElement.scrollTop -= document.documentElement.scrollTop / 10;
+        document.documentElement.scrollTop -= document.documentElement.scrollTop / 5;
         if (document.documentElement.scrollTop <= 0) {
           clearInterval(timer);
         }
       }, 16);
+      document.addEventListener("touchmove",function(){
+        clearInterval(timer)
+      })
     }
   }
 };

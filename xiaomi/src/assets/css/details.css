@@ -278,3 +278,53 @@
   line-height: 2.63157895rem;
   border-radius: 1.19617225rem;
 }
+.detail .addCart {
+  width: 12rem;
+  height: 8rem;
+  position: fixed;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 1.6rem;
+  top: 50%;
+  left: 50%;
+  z-index: 999999;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  animation: addCartSucess 0.3s linear;
+}
+.detail .addCart i {
+  font-size: 2.4rem;
+}
+.detail .addCart h3 {
+  width: 100%;
+}
+@keyframes addCartSucess {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.detail #setTop {
+  position: fixed;
+  bottom: 13%;
+  opacity: 0;
+  right: 3%;
+}
+.detail #setTop img {
+  width: 30px;
+}
+.detail .setTopAnimate {
+  animation: setTopAnimate 0.3s linear both;
+}
+@keyframes setTopAnimate {
+  from {
+    transform: rotate(360deg) scale(0);
+  }
+  to {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}

@@ -287,4 +287,57 @@
       }
     }
   }
+   //添加购物车成功
+   .addCart {
+    width: 150/12.5rem;
+    height: 100/12.5rem;
+    position: fixed;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20/12.5rem;
+    top: 50%;
+    left: 50%;
+    z-index: 999999;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    animation: addCartSucess 0.3s linear;
+    // transition: all 3s linear;
+    i {
+      font-size: 30/12.5rem;
+    }
+    h3 {
+      width: 100%;
+    }
+  }
+  @keyframes addCartSucess {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  // 置顶
+  #setTop {
+    position: fixed;
+    bottom: 13%;
+    opacity: 0;
+    right: 3%;
+    img {
+      width: 30px;
+    }
+  }
+  .setTopAnimate {
+    animation: setTopAnimate 0.3s linear both;
+  }
+  @keyframes setTopAnimate {
+    from {
+      transform: rotate(360deg) scale(0);
+    }
+    to {
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+    }
+  }
 }
