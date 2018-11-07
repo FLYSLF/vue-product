@@ -168,6 +168,7 @@
     }
   }
 }
+// 置顶
 #setTop{
   position: fixed;
   bottom: 17%;
@@ -187,5 +188,61 @@
   to{
     transform: rotate(0deg) scale(1);
     opacity: 1;
+  }
+}
+//添加购物车成功
+.addCart{
+  width: 150/12.5rem;
+  height:100/12.5rem;
+  position: fixed;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 20/12.5rem;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:rgba(0,0,0,0.4);
+  color: #fff;
+  animation: addCartSucess .3s linear;
+  // transition: all 3s linear;
+  i{
+    font-size:30/12.5rem;
+  }
+  h3{
+    width: 100%;
+  }
+}
+@keyframes addCartSucess{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+//确认删除提示框
+.mint-msgbox-content{
+  // background: #ff6700;
+  border: none;
+}
+.mint-msgbox{
+  width:95%;
+  padding-bottom: 20px;
+}
+.mint-msgbox-message{
+  font-size: 14px;
+  height: 100px;
+  line-height: 100/12.5rem;
+}
+.mint-msgbox-btns{
+  padding: 0 10px;
+  button{
+    margin: 0 5px;
+  color: #6b6b6b;
+    border: 1px solid #ddd;
+  }
+  .mint-msgbox-confirm{
+    background: #ff5722;
+    color:#fff;
   }
 }

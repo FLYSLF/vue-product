@@ -39,17 +39,29 @@
 				<button @click="submit()"  :class="{complete:deleteFlag}">{{deleteFlag?"删除":"结算"}} <span v-show="!deleteFlag">(<span>{{sumNum}}</span>)</span></button>
 			</div>
 		</div>
+  <!-- 置顶 -->
     <div id="setTop" @click="settop()" v-if="setTop1" :class="{setTopAnimate:setTop1}">
       <img  src="../../assets/img/top.451d650ecd.png" alt=""/>
-      </div>
+    </div>
+    <!-- 添加购物车成功 -->
+    <!-- <mt-popup v-model="addCartSuccess"><h3>hello</h3></mt-popup> -->
+    <div :class="{addCart:addCartSuccess}">
+      <i class="iconfont">&#xe654;</i>
+      <h2>添加成功</h2>
+    </div>
+    <!-- <div class="colorSelect">
+
+    </div> -->
 	</div>
 </template>
 <script>
-import CartHeader from "../../components/cartHeader";
-import CartIcon from "../../components/cart_icon";
-import CartItem from "../../components/cart_item";
+import CartHeader from "../../components/CartHeader";
+import CartIcon from "../../components/Cart_icon";
+import CartItem from "../../components/Cart_item";
 import axios from "axios";
-import { Lazyload } from "mint-ui";
+import store from "../../store/store"
+import { Lazyload ,MessageBox } from "mint-ui";
+
 export default {
   components: {
     CartHeader,
@@ -63,6 +75,7 @@ export default {
           flag: true,
           name: "小米MIX 3 8GB+256G",
           color: "流沙金",
+          "colorList": ["黑色", "白色", "红色", "蓝色", "流沙金"],
           image_url: require("../../assets/img/hongmi6.jpg"),
           price: 749,
           sum: 1
@@ -71,6 +84,7 @@ export default {
           flag: true,
           name: "小米手环3 NFC版",
           color: "黑色",
+          "colorList": ["黑色", "白色", "红色", "蓝色", "流沙金"],
           image_url: require("../../assets/img/shouhuang3.png"),
           price: 199,
           sum: 1
@@ -82,7 +96,8 @@ export default {
       checkArr: [],
       empty: true,
       // scrollTop:0
-      setTop1: false
+      setTop1: false,
+      addCartSuccess:false
     };
   },
   //请求数据
@@ -95,11 +110,11 @@ export default {
         document.documentElement.scrollTop + document.body.scrollTop;
       scrollTop >= 1000 ? (this.setTop1 = true) : (this.setTop1 = false);
     };
+    store.state.tabbarFlag = true;
   },
   computed: {
     //判断商品是否所有都勾选 勾选则切换全选状态
     checkto() {
-      console.log("checkto");
       var len = this.goodsList.length;
       var num1 = 0;
       this.goodsList.map((item, index) => {
@@ -114,15 +129,14 @@ export default {
     // },
     //总数量
     sumNum() {
-      console.log("sumNum");
       var num = 0;
       this.goodsList.map(item => (item.flag ? (num += item.sum) : item.sum));
+      store.state.cartNum = num;
       return num;
       // return this.goodsList.map(item => item.flag) ? this.num++ : this.num--;
     },
     //总价格
     sumPrice() {
-      console.log("sumPrice");
       var price = 0;
       this.goodsList.map(
         item => (item.flag ? (price += item.price * item.sum) : item.sum)
@@ -133,10 +147,8 @@ export default {
   methods: {
     //全选切换
     toggle() {
-      this.allcheck = !this.allcheck;
-      this.allcheck
-        ? this.goodsList.map(item => (item.flag = true)) !== undefined
-        : this.goodsList.map(item => (item.flag = false)) === undefined;
+      this.allcheck = ! this.allcheck;
+      this.allcheck ? this.goodsList.map(item => (item.flag = true)) !== undefined : this.goodsList.map(item => (item.flag = false)) === undefined;
     },
     deleteIcon() {
       //如果编辑则设置所有商品都是未选中状态 deleteFlag为true是完成状态 false切换
@@ -161,8 +173,8 @@ export default {
     },
     //点击提交/删除按钮
     submit() {
-      if (this.deleteFlag) {
-        //判断是删除还是结算
+      if (this.deleteFlag) {//判断是删除还是结算
+      MessageBox.confirm('确认删除勾选商品？',"").then(action => {
         var len = this.goodsList.length;
         //删除所选商品
         for (var i = 0; i < len; i++) {
@@ -179,21 +191,25 @@ export default {
             })(i);
           }
         }
+      });
       }
     },
+    // 添加至购物车
     addCart(json, index) {
       json.sum = 1;
       this.goodsList.push(json);
       var ranNum = Math.floor(Math.random() * this.moreList.length);
       this.moreList.sort((a, b) => Math.random() - 0.5);
       this.empty = true;
-      console.log(this.moreList.length)
+      this.addCartSuccess = true;
+      setTimeout(() =>{
+        this.addCartSuccess = false;
+      },1500)
     },
     //置顶
     settop() {
       var timer = setInterval(() => {
-        document.documentElement.scrollTop -=
-          document.documentElement.scrollTop / 10;
+        document.documentElement.scrollTop -= document.documentElement.scrollTop / 10;
         if (document.documentElement.scrollTop <= 0) {
           clearInterval(timer);
         }
