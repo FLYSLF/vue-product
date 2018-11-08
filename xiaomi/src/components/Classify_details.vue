@@ -102,10 +102,10 @@
 		mounted() {
 			this.axios.get("/api/Detailsc").then((res) => {
 				
-				this.arr1 = res.data.data.goods_share_datas.comments.list[2]
-				this.arr2 = res.data.data.goods_share_datas.comments.list[0]
-				this.arr3 = res.data.data.goods_share_datas.comments.list[4]
-				this.arr4 = res.data.data.goods_share_datas.comments.list[3]
+				this.arr1 = res.data.data.goods_share_datas.comments.list[0]
+				this.arr2 = res.data.data.goods_share_datas.comments.list[2]
+				this.arr3 = res.data.data.goods_share_datas.comments.list[3]
+				this.arr4 = res.data.data.goods_share_datas.comments.list[4]
 			}),
 			new Swiper('#swiper-container', {
 		        slidesPerView: 1.2,
