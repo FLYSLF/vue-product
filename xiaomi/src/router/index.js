@@ -26,6 +26,7 @@ import Two from "@/pages/mine/two/Two"
 
 import Find from '@/pages/find/Find'
 import FindMifen from '@/pages/find/FindMifen'
+import FindLive from '@/pages/find/FindLive'
 import ShoppingCart from '@/pages/shoppingCart/ShoppingCart'
 import Mine from '@/pages/mine/Mine'
 
@@ -115,6 +116,11 @@ export default new Router({
     	path:'/FindMifen',
     	name:'FindMifen',
     	component: FindMifen
+    },
+    {
+    	path:'/FindLive',
+    	name:'FindLive',
+    	component:FindLive
     },
     {
       path: '/shoppingCart',
