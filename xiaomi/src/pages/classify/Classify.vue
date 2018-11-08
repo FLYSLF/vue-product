@@ -13,7 +13,7 @@
 				<!--新品-->
 				<ClassifyC id="653" class="wear">
 						<router-link to="/Detailsc1" slot="image">
-							<img src="static/images/t1.jpg"/>
+							<img src="static/images/cla_sj1.jpg"/>
 						</router-link>
 				</ClassifyC>	
 				
@@ -28,7 +28,9 @@
 				
 				<!--手机-->
 				<ClassifyC id="457" class="wear">
-					<img slot="image" src="static/images/t1.jpg"/>
+					<router-link to="/Detailsc1" slot="image">
+					<img src="static/images/t1.jpg"/>
+					</router-link>
 				</ClassifyC>
 				
 				<ImageSmall newsj='小米手机' :info_list="xiaomisj">
@@ -44,7 +46,9 @@
 				</PinDao>
 				<!--电视项-->
 				<ClassifyC id='458' class="wear">
-					<img slot="image" src="static/images/t1.jpg"/>
+					<router-link to="/Detailsc1" slot="image">
+					<img src="static/images/cla_sj2.jpg"/>
+					</router-link>
 				</ClassifyC>
 				
 				<ImageSmall newsj='电视' :info_list="dianshib">
@@ -64,7 +68,9 @@
 				
 				<!--电脑项-->
 				<ClassifyC id='459' class="wear">
-					<img slot="image" src="static/images/t1.jpg"/>
+					<router-link to="/Detailsc1" slot="image">
+					<img src="static/images/cla_sj3.jpg"/>
+					</router-link>
 				</ClassifyC>
 				
 				<ImageSmall newsj='电脑' :info_list="diannaob">
@@ -78,7 +84,9 @@
 				
 				<!-- 家电项-->
 				<ClassifyC id='460' class="wear">
-					<img slot="image" src="static/images/t1.jpg"/>
+					<router-link to="/Detailsc1" slot="image">
+					<img src="static/images/cla_sj4.jpg"/>
+					</router-link>
 				</ClassifyC>
 				
 				<ImageSmall newsj='家电' :info_list="jiadian">
@@ -92,7 +100,9 @@
 				
 				<!-- 路由项-->
 				<ClassifyC id="462" class="wear">
-					<img slot="image" src="static/images/t1.jpg"/>
+					<router-link to="/Detailsc1" slot="image">
+					<img src="static/images/cla_sj5.jpg"/>
+					</router-link>
 				</ClassifyC>
 				
 				<ImageSmall newsj='路由' :info_list="luyou">
@@ -106,7 +116,9 @@
 				
 				<!-- 出行项-->
 				<ClassifyC id="871" class="wear">
-					<img slot="image" src="static/images/t1.jpg"/>
+					<router-link to="/Detailsc1" slot="image">
+					<img src="static/images/cla_sj1.jpg"/>
+					</router-link>
 				</ClassifyC>
 				
 				<ImageSmall newsj='出行' :info_list="chuxing">
@@ -117,7 +129,9 @@
 				
 				<!-- 穿戴项-->
 				<ClassifyC id="874" class="wear">
-					<img slot="image" src="static/images/t1.jpg"/>
+					<router-link to="/Detailsc1" slot="image">
+					<img src="static/images/cla_sj2.jpg"/>
+					</router-link>
 				</ClassifyC>
 				
 				<ImageSmall newsj='穿戴' :info_list="chuandai">
@@ -128,7 +142,9 @@
 				
 				<!-- 智能项-->
 				<ClassifyC id="461" class="wear">
-					<img slot="image" src="static/images/t1.jpg"/>
+					<router-link to="/Detailsc1" slot="image">
+					<img src="static/images/cla_sj3.jpg"/>
+					</router-link>
 				</ClassifyC>
 				
 				<ImageSmall newsj='智能' :info_list="zhineng">
@@ -139,7 +155,9 @@
 				
 				<!-- 电源项-->
 				<ClassifyC id="463" class="wear" >
-					<img slot="image" src="static/images/t1.jpg"/>
+					<router-link to="/Detailsc1" slot="image">
+					<img src="static/images/cla_sj5.jpg"/>
+					</router-link>
 				</ClassifyC>
 				
 				<ImageSmall newsj='电源' :info_list="dianyuan">
@@ -154,6 +172,7 @@
 </template>
 
 <script type="text/javascript">
+	import store from "@/store/store.js";
 	import TopSearch from '@/components/TopSearch'
 	import ClassifyC from "@/components/ClassifyC"
 	import ImageSmall from "@/components/ImageSmall"
@@ -213,6 +232,7 @@
 		},
 		
 		mounted(){
+			store.state.tabbarFlag = true;
 			//访问接口
 			//var That = this;
 			this.axios.get("/api/listdata").then((res)=>{		
@@ -292,9 +312,9 @@
 	.audio{
 		
 
+		margin-top: 3rem;
 	.content {
 		width: 100%;
-		/*margin-top: -3rem;*/
 		margin-bottom: 280/75rem;
 		border-top: 1px solid gainsboro;
 		width: 100%;

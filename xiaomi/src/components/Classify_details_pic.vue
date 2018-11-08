@@ -24,6 +24,7 @@
 
 			});
 		}
+		
 	}
 </script>
 
@@ -50,6 +51,7 @@
 				width: 100%;
 				height: 13rem;
 				border-radius: 1rem;
+				background: greenyellow !important;
 			}
 			p {
 				font-size: 1.2rem;

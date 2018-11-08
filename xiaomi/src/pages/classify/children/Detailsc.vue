@@ -1,5 +1,16 @@
 <template>
 	<div class="detailsc">
+		<div class="details_top">
+			<a @click="back()" class="left"><i class="iconfont">&#xe628;</i></a>
+			<a class="right" @click="messageShareF($event)">
+				<i class="iconfont">&#xe637;</i>
+				<div class="messageShare" v-show="messageShareFlag">
+					<i class="iconfont">&#xe666;</i>
+					<p><i class="iconfont">&#xe763;</i>消息通知</p>
+					<p><i class="iconfont">&#xe60c;</i>分享</p>
+				</div>
+			</a>
+		</div>
 		<div class="swiper-container my-banner">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" v-for="(item,index) in arr1">
@@ -69,6 +80,7 @@
 				<i class="iconfont">&#xe654;<em>小米发货</em></i>
 
 				<i class="iconfont">&#xe654;<em>七天无理由退货</em></i>
+
 			</p>
 		</div>
 
@@ -98,13 +110,28 @@
 
 		</Classify_details_pic>
 
-	<!--<div id="BackTop" @click="BackTop()" v-if="BackTop" :class="{BackTopAnimate:BackTop}">
-		<img src="../../../assets/img/top.451d650ecd.png" alt="" />
-	</div>-->
+		<div id="BackTop" @click="BackTop()" v-if="BackTop1" :class="{BackTopAnimate:BackTop1}">
+			<img src="../../../assets/img/top.451d650ecd.png" alt="" />
+		</div>
+		<footer>
+			<div class="footer">
+				<a @click="breake('/')">
+					<i class="iconfont icon-shouye"></i> 首页
+				</a>
+				<a class="cart">
+					<i class="iconfont icon-ziyuan"></i> 购物车
+					
+				</a>
+				<div class="action-box">
+					<a>加入购物车</a>
+				</div>
+			</div>
+		</footer>
 	</div>
 </template>
 
 <script>
+	import store from "@/store/store.js";
 	import Classify_details from '@/components/Classify_details'
 	import Classify_details_pic from '@/components/Classify_details_pic'
 	import Swiper from '@/assets/lib/swiper/js/swiper.js'
@@ -116,10 +143,20 @@
 		data() {
 			return {
 				arr: [],
-				arr1: []
+				arr1: [],
+				messageShareFlag: false,
+				BackTop1: false
+			};
+		},
+		computed: {
+			tabbarFlag() {
+				return store.state.tabbarFlag;
 			}
+			
 		},
 		mounted() {
+			store.state.tabbarFlag = false;
+
 			this.axios.get("/api/Detailsc").then((res) => {
 
 				this.arr = res.data.data.goods_info[1].class_parameters.list
@@ -131,20 +168,44 @@
 			observeParents: true
 
 			var swiper = new Swiper('.swiper-container', {
+				loop: true,
 				pagination: '.swiper-pagination',
 				paginationClickable: true,
 				observer: true, //修改swiper自己或子元素时，自动初始化swiper
 				observeParents: true, //修改swiper的父元素时，自动初始化swiper
 			});
+			//置顶设置在>= 1000时候出现
+			window.onscroll = () => {
+				var scrollTop =
+					document.documentElement.scrollTop + document.body.scrollTop;
+				scrollTop >= 1000 ? (this.BackTop1 = true) : (this.BackTop1 = false);
+			};
+
+		},
+		methods: {
+			back() {
+				window.history.back();
+			},
+			messageShareF(e) {
+				e.stopPropagation();
+				this.messageShareFlag = true;
+				document.onclick = () => {
+					this.messageShareFlag = false;
+				};
+			},
 			//置顶
-			//			BackTop() {
-			//				var timer = setInterval(() => {
-			//					document.documentElement.scrollTop -= document.documentElement.scrollTop / 10;
-			//					if(document.documentElement.scrollTop <= 0) {
-			//						clearInterval(timer);
-			//					}
-			//				}, 16);
-			//			}
+			BackTop() {
+				var timer = setInterval(() => {
+					document.documentElement.scrollTop -= document.documentElement.scrollTop / 5;
+					if(document.documentElement.scrollTop <= 0) {
+						clearInterval(timer);
+					}
+				}, 16);
+			},
+			breake(path) {
+				this.$router.push(path);
+				store.state.tabbarFlag = true;
+			}
 		}
 
 	}
@@ -155,20 +216,69 @@
 	.detailsc {
 		margin-top: -3rem;
 		margin-bottom: 3rem;
-	}
-	
-	img {
-		width: 100%;
-		vertical-align: middle;
+		position: relative;
+		.details_top {
+			padding: 0.8rem;
+			background: transparent;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 10;
+			a {
+				width: 2.4rem;
+				height: 2.4rem;
+				color: #ddd;
+				background: rgba(0, 0, 0, 0.6);
+				display: block;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.left {
+				float: left;
+			}
+			.right {
+				float: right;
+				position: relative;
+				i {
+					font-size: 1.6rem;
+				}
+				.messageShare {
+					position: absolute;
+					top: 4.08rem;
+					right: -0.4rem;
+					width: 8.8rem;
+					height: 4.8rem;
+					text-align: left;
+					border-radius: 0.4rem;
+					background: rgba(0, 0, 0, 0.5);
+					&>i {
+						position: absolute;
+						color: rgba(0.5, 0.5, 0.5, 0.4);
+						top: -1.096rem;
+						font-size: 1.36rem;
+						right: 0.8rem;
+					}
+					p {
+						line-height: 2.4rem;
+						height: 50%;
+						i {
+							font-size: 1.44rem;
+							padding: 0 0.8rem;
+						}
+					}
+					p:last-child>i {
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
 	}
 	
 	.swiper-pagination {
-		text-align: right;
-	}
-	
-	.swiper-pagination-bullet {
-		background-color: #fff;
-		opacity: 1;
+		text-align: center;
 	}
 	
 	.swiper-pagination-bullet-active {
@@ -321,12 +431,72 @@
 			font-size: 1.5rem;
 		}
 	}
-	/*.BackTop{
-		position: absolute;
+	
+	#BackTop {
+		position: fixed;
+		bottom: 6rem;
+		right: 1rem;
+		width: 3rem;
+		height: 3rem;
+	}
+	/*底部*/
+	
+	.detailsc footer {
+		padding: 0 0.66491228rem 0.66491228rem;
+		background: transparent;
+		position: fixed;
 		bottom: 0;
+		left: 0;
 		right: 0;
-		width: 10rem;
-		height: 10rem;
-		background: #007AFF;
-	}*/
+		z-index: 100;
+		.footer {
+			display: flex;
+			align-items: center;
+			background-color: rgba(255, 255, 255, 0.96) !important;
+			width: 100%;
+			height: 4.16172249rem;
+			border: 0.07974482rem solid #e5e5e5;
+			border-radius: 1.19617225rem;
+			overflow: hidden;
+			box-shadow: 0 0.15948963rem 0.31897927rem -0.07974482rem rgba(0, 0, 0, 0.2), 0 0.31897927rem 0.39872408rem rgba(0, 0, 0, 0.14), 0 0.07974482rem 0.79744817rem rgba(0, 0, 0, 0.12);
+			a {
+				display: block;
+				position: relative;
+				color: rgba(0, 0, 0, 0.54);
+				margin-left: 2.3923445rem;
+			}
+		}
+	}
+	
+	.detailsc footer .footer a i {
+		display: block;
+		font-size: 1.99362041rem;
+	}
+	
+	.detailsc footer .footer a .num {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 1.19617225rem;
+		height: 1.19617225rem;
+		font-size: 0.9569378rem;
+		background: #ff6700;
+		color: #fff;
+		line-height: 1.19617225rem;
+		border-radius: 100%;
+	}
+	
+	.detailsc footer .footer .action-box {
+		margin-left: 5.58213716rem;
+	}
+	
+	.detailsc footer .footer .action-box a {
+		background: #ff6700;
+		color: #fff;
+		text-align: center;
+		padding: 0 1.99362041rem;
+		height: 2.63157895rem;
+		line-height: 2.63157895rem;
+		border-radius: 1.19617225rem;
+	}
 </style>
