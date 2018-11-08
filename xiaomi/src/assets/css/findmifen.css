@@ -1,0 +1,85 @@
+h2 {
+  font-size: 24px;
+}
+#app {
+  margin-top: 0;
+}
+.head {
+  display: flex;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 2.4rem;
+  border-bottom: 1px solid #2C3E50;
+}
+.head .gift {
+  text-align: center;
+  line-height: 2.4rem;
+}
+.head .gift a {
+  padding-left: 0.8rem;
+}
+.head .gift i {
+  vertical-align: middle;
+}
+.head .right {
+  margin-left: 20.8rem;
+  text-align: right;
+  line-height: 2.4rem;
+}
+.head .right .at i {
+  position: relative;
+  left: -20px;
+  vertical-align: middle;
+}
+.head .right .ar i {
+  vertical-align: middle;
+}
+.weixing {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #DDDDDD;
+}
+.weixing div p,
+.weixing div h2 {
+  color: #FFA500!important;
+}
+.weixing div .p1 {
+  margin-top: 8px;
+}
+.mony .mony1 {
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+.mony .mony1 .sp {
+  font-size: 16px;
+  vertical-align: middle;
+}
+.img {
+  float: left;
+  width: 50%;
+  margin: 35px 0;
+}
+.img .fl {
+  border: 1px solid #CACACA;
+  height: 200px;
+  margin-left: 8px;
+  margin-right: 8px;
+  background: #fff;
+  border-radius: 20px;
+}
+.img .fl img {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0 0;
+}
+.img .fl h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}

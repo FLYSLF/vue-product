@@ -31,6 +31,10 @@ import Find from "@/pages/find/Find";
 import ShoppingCart from "@/pages/shoppingCart/ShoppingCart";
 import Mine from "@/pages/mine/Mine";
 import Details from "../components/Details";
+import FindMifen from '@/pages/find/FindMifen'
+
+//更多评论
+import MoreComment from "../components/MoreComment";
 
 export default new Router({
   routes: [
@@ -116,8 +120,13 @@ export default new Router({
       component: Find
     },
     {
-      path: "/shoppingCart",
-      name: "ShoppingCart",
+    	path:'/FindMifen',
+    	name:'FindMifen',
+    	component: FindMifen
+    },
+    {
+      path: '/shoppingCart',
+      name: 'ShoppingCart',
       component: ShoppingCart
     },
     {
@@ -129,6 +138,11 @@ export default new Router({
       path:"/details:id",
       name:"Details",
       component:Details
-    }
+		},
+		{
+			path:"/MoreComment",
+			name:"MoreComment",
+			component:MoreComment
+		}
   ]
 });

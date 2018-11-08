@@ -1,0 +1,739 @@
+[
+    {
+      "block_id": "3324484",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_product_gallery",
+      "view_type": "product_info_product_gallery"
+    },
+    {
+      "block_id": "3324485",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_activity_tip",
+      "view_type": "product_info_activity_tip"
+    },
+    {
+      "block_id": "3324486",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_product_name",
+      "view_type": "product_info_product_name"
+    },
+    {
+      "block_id": "3324487",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_product_desc",
+      "view_type": "product_info_product_desc"
+    },
+    {
+      "block_id": "3324488",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_product_price",
+      "view_type": "product_info_product_price"
+    },
+    {
+      "block_id": "3324489",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_class_parameters",
+      "view_type": "product_info_class_parameters"
+    },
+    {
+      "block_id": "3324490",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_benefits",
+      "view_type": "product_info_benefits"
+    },
+    {
+      "block_id": "3324491",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_choose_version",
+      "view_type": "product_info_choose_version"
+    },
+    {
+      "block_id": "3325026",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_rank",
+      "view_type": "product_info_rank"
+    },
+    {
+      "block_id": "3324492",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_comment",
+      "view_type": "product_info_comment"
+    },
+    {
+      "block_id": "3341577",
+      "body": {
+        "height": "0",
+        "line_height": "96",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "blank_line"
+    },
+    {
+      "block_id": "3324493",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/f5646ece-31ca-84c0-dddb-b648273367ab.webp?w=1080&h=379&bg=F2F0F0",
+        "img_url_color": "#F2F0F0",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/f5646ece-31ca-84c0-dddb-b648273367ab.webp?w=1080&h=379&bg=F2F0F0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324494",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/9c0db59e-7ade-d805-44bb-954d4c3d1b3d.webp?w=1080&h=428&bg=9D95A2",
+        "img_url_color": "#9D95A2",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/9c0db59e-7ade-d805-44bb-954d4c3d1b3d.webp?w=1080&h=428&bg=9D95A2",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324495",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/34cff72b-951a-073a-fb17-fdbbcf0841c0.webp?w=1080&h=333&bg=969A9F",
+        "img_url_color": "#969A9F",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/34cff72b-951a-073a-fb17-fdbbcf0841c0.webp?w=1080&h=333&bg=969A9F",
+        "is_show_animation": 2,
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324496",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/e263a7ec-c7c3-a6e9-77ee-9484e2a89d6b.webp?w=1080&h=724&bg=EFEFEF",
+        "img_url_color": "#EFEFEF",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/e263a7ec-c7c3-a6e9-77ee-9484e2a89d6b.webp?w=1080&h=724&bg=EFEFEF",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3341578",
+      "body": {
+        "height": "0",
+        "line_height": "50",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "blank_line"
+    },
+    {
+      "block_id": "3324552",
+      "body": {
+        "height": "0",
+        "is_show_animation": 1,
+        "margin_left": 64,
+        "margin_right": 64,
+        "not_win_prize_action": null,
+        "page_id": "6938",
+        "text": "查看全部参数",
+        "text_align": "left",
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "show_more"
+    },
+    {
+      "block_id": "3324497",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/6c530d7e-5615-590f-5304-3b206d42039e.webp?w=1080&h=609&bg=2C2C2C",
+        "img_url_color": "#2C2C2C",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/6c530d7e-5615-590f-5304-3b206d42039e.webp?w=1080&h=609&bg=2C2C2C",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324498",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/820774ce-43aa-0a05-1c9d-268f0c8b665a.webp?w=1080&h=746&bg=363F45",
+        "img_url_color": "#363F45",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/820774ce-43aa-0a05-1c9d-268f0c8b665a.webp?w=1080&h=746&bg=363F45",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324499",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/32abf7e1-918a-6658-9f9e-507e435751e2.webp?w=1080&h=813&bg=272826",
+        "img_url_color": "#272826",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/32abf7e1-918a-6658-9f9e-507e435751e2.webp?w=1080&h=813&bg=272826",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324500",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/9a759f24-723f-cec9-8021-316337e48c41.webp?w=1080&h=621&bg=1B1D19",
+        "img_url_color": "#1B1D19",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/9a759f24-723f-cec9-8021-316337e48c41.webp?w=1080&h=621&bg=1B1D19",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324501",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/ceb3aee7-6215-0325-087a-5e13f1e8aa44.webp?w=1080&h=757&bg=1E1E1E",
+        "img_url_color": "#1E1E1E",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/ceb3aee7-6215-0325-087a-5e13f1e8aa44.webp?w=1080&h=757&bg=1E1E1E",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324502",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/339adacf-3ad5-b55c-3681-c70b3f70be82.webp?w=1080&h=503&bg=2C1E19",
+        "img_url_color": "#2C1E19",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/339adacf-3ad5-b55c-3681-c70b3f70be82.webp?w=1080&h=503&bg=2C1E19",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324503",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/34f91b2a-0dba-70d1-c0aa-841c8a45392f.webp?w=1080&h=409&bg=242424",
+        "img_url_color": "#242424",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/34f91b2a-0dba-70d1-c0aa-841c8a45392f.webp?w=1080&h=409&bg=242424",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324504",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/3370a6e8-bad3-8424-b822-e7da8f7fe3ab.webp?w=1080&h=675&bg=212121",
+        "img_url_color": "#212121",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/3370a6e8-bad3-8424-b822-e7da8f7fe3ab.webp?w=1080&h=675&bg=212121",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324505",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/15fa1bb1-d788-6777-707e-4b690e9b4443.webp?w=1080&h=788&bg=292A2B",
+        "img_url_color": "#292A2B",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/15fa1bb1-d788-6777-707e-4b690e9b4443.webp?w=1080&h=788&bg=292A2B",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324506",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/08d3a55e-38ee-37fe-154e-eb4887d096bf.webp?w=1080&h=519&bg=F2F2F2",
+        "img_url_color": "#F2F2F2",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/08d3a55e-38ee-37fe-154e-eb4887d096bf.webp?w=1080&h=519&bg=F2F2F2",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324507",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/5d268f5f-2a1b-b189-6794-665271c28b95.webp?w=1080&h=499&bg=968D9A",
+        "img_url_color": "#968D9A",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/5d268f5f-2a1b-b189-6794-665271c28b95.webp?w=1080&h=499&bg=968D9A",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324508",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/33327026-de50-e2fc-7a62-f532db12a54b.webp?w=1080&h=374&bg=9899A8",
+        "img_url_color": "#9899A8",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/33327026-de50-e2fc-7a62-f532db12a54b.webp?w=1080&h=374&bg=9899A8",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324509",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/217053db-8f10-1bed-a386-7b387930d08d.webp?w=1080&h=679&bg=F2F1F0",
+        "img_url_color": "#F2F1F0",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/217053db-8f10-1bed-a386-7b387930d08d.webp?w=1080&h=679&bg=F2F1F0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324510",
+      "body": {
+        "height": "0",
+        "img_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/ff2fedecd3658200b481e86a8d338b0b.jpg?w=1080&h=541&bg=FFFFFF",
+        "img_url_color": "#FFFFFF",
+        "img_url_webp": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/ff2fedecd3658200b481e86a8d338b0b.jpg?w=1080&h=541&bg=FFFFFF",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324511",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/196b7b19-0614-d006-3204-dd461953d9ca.webp?w=1080&h=526&bg=15171D",
+        "img_url_color": "#15171D",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/196b7b19-0614-d006-3204-dd461953d9ca.webp?w=1080&h=526&bg=15171D",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324512",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/094b736c-a84c-824d-649a-ec81e0f9f6bd.webp?w=1080&h=822&bg=15161A",
+        "img_url_color": "#15161A",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/094b736c-a84c-824d-649a-ec81e0f9f6bd.webp?w=1080&h=822&bg=15161A",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324513",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/720393d2-a4f9-0943-d8d9-ff890c7e47bf.webp?w=1080&h=631&bg=151820",
+        "img_url_color": "#151820",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/720393d2-a4f9-0943-d8d9-ff890c7e47bf.webp?w=1080&h=631&bg=151820",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324514",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/2574ce9e-2169-26f2-38f0-d3c7965a8f06.webp?w=1080&h=526&bg=1E212C",
+        "img_url_color": "#1E212C",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/2574ce9e-2169-26f2-38f0-d3c7965a8f06.webp?w=1080&h=526&bg=1E212C",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324515",
+      "body": {
+        "height": "0",
+        "img_url": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e1b131d5fb71fbb06150bdf3aaffe196.jpg?w=1080&h=1184&bg=FFFFFF",
+        "img_url_color": "#FFFFFF",
+        "img_url_webp": "//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e1b131d5fb71fbb06150bdf3aaffe196.jpg?w=1080&h=1184&bg=FFFFFF",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324516",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/edce178a-aa77-3dea-02db-005c1499cbba.webp?w=1080&h=860&bg=BABDC3",
+        "img_url_color": "#BABDC3",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/edce178a-aa77-3dea-02db-005c1499cbba.webp?w=1080&h=860&bg=BABDC3",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324517",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/c475c639-315f-40d8-1328-650a641dc414.webp?w=1080&h=682&bg=E5E5E5",
+        "img_url_color": "#E5E5E5",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/c475c639-315f-40d8-1328-650a641dc414.webp?w=1080&h=682&bg=E5E5E5",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324518",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/88f954b1-0fe9-b37b-917a-1fd7b36397dd.webp?w=1080&h=861&bg=D2D3D4",
+        "img_url_color": "#D2D3D4",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/88f954b1-0fe9-b37b-917a-1fd7b36397dd.webp?w=1080&h=861&bg=D2D3D4",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324519",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/8cd60d94-1493-123e-6862-bbccaa81accb.webp?w=1080&h=380&bg=969395",
+        "img_url_color": "#969395",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/8cd60d94-1493-123e-6862-bbccaa81accb.webp?w=1080&h=380&bg=969395",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324520",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/f97c5b58-f1a4-876d-53d1-3e8221f5e096.webp?w=1080&h=438&bg=574C4D",
+        "img_url_color": "#574C4D",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/f97c5b58-f1a4-876d-53d1-3e8221f5e096.webp?w=1080&h=438&bg=574C4D",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324521",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/69c9eeb0-4f2b-5ae1-4dcd-b8d86c1cbbb1.webp?w=1080&h=484&bg=3E3431",
+        "img_url_color": "#3E3431",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/69c9eeb0-4f2b-5ae1-4dcd-b8d86c1cbbb1.webp?w=1080&h=484&bg=3E3431",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324522",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/4e5ce5cd-b06d-7eb6-e89c-e48f2ee4d944.webp?w=1080&h=341&bg=5C514E",
+        "img_url_color": "#5C514E",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/4e5ce5cd-b06d-7eb6-e89c-e48f2ee4d944.webp?w=1080&h=341&bg=5C514E",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324523",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/b627834e-dff9-beb2-383d-8669253e7b89.webp?w=1080&h=711&bg=F0F0F0",
+        "img_url_color": "#F0F0F0",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/b627834e-dff9-beb2-383d-8669253e7b89.webp?w=1080&h=711&bg=F0F0F0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324524",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/a59230b7-83e8-1dfa-8be5-61c6ea312847.webp?w=1080&h=452&bg=F0F0F0",
+        "img_url_color": "#F0F0F0",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/a59230b7-83e8-1dfa-8be5-61c6ea312847.webp?w=1080&h=452&bg=F0F0F0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324525",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/e73d2bc0-0be5-e3ee-5636-105f79567927.webp?w=1080&h=643&bg=F9F9F9",
+        "img_url_color": "#F9F9F9",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/e73d2bc0-0be5-e3ee-5636-105f79567927.webp?w=1080&h=643&bg=F9F9F9",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324526",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/1753994e-703a-0c44-ac9e-6a5ff15f2f07.webp?w=1080&h=321&bg=F7F7F7",
+        "img_url_color": "#F7F7F7",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/1753994e-703a-0c44-ac9e-6a5ff15f2f07.webp?w=1080&h=321&bg=F7F7F7",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324527",
+      "body": {
+        "height": "0",
+        "img_url": "//i8.mifile.cn/v1/a1/6ec198cc-9fc1-e389-2e5f-81503b3acd47.webp?w=1080&h=347&bg=F9F9F9",
+        "img_url_color": "#F9F9F9",
+        "img_url_webp": "//i8.mifile.cn/v1/a1/6ec198cc-9fc1-e389-2e5f-81503b3acd47.webp?w=1080&h=347&bg=F9F9F9",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "image_w_1080"
+    },
+    {
+      "block_id": "3324528",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_relate_parts",
+      "view_type": "product_info_relate_parts"
+    },
+    {
+      "block_id": "3324529",
+      "body": {
+        "height": "0",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "stat": "product_info_recommend",
+      "view_type": "product_info_recommend"
+    },
+    {
+      "block_id": "3324530",
+      "body": {
+        "height": "0",
+        "line_height": "168",
+        "margin_left": 0,
+        "margin_right": 0,
+        "not_win_prize_action": null,
+        "width": "0",
+        "win_prize_action": null
+      },
+      "view_type": "blank_line"
+    }
+  ]

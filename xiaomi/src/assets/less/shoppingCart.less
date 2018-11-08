@@ -1,70 +1,70 @@
 .broadcast {
   text-align: left;
-  
-}
-// 头部
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 666;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100/2/12.5rem;
-  background: #f2f2f2;
-  .back {
-    position: absolute;
-    left: 20/2/12.5rem;
-    img {
-      width: 40/2/12.5rem;
-      height: 40/2/12.5rem;
+  img {
+    width: 100%;
+  }
+  // 头部
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100/2/12.5rem;
+    background: #f2f2f2;
+    .back {
+      position: absolute;
+      left: 20/2/12.5rem;
+      img {
+        width: 40/2/12.5rem;
+        height: 40/2/12.5rem;
+      }
+    }
+    .message {
+      position: absolute;
+      right: 20/2/12.5rem;
+      span {
+        line-height: 80/2/12.5rem;
+        color: #000;
+        padding: 0 18/2/12.5rem;
+      }
+      i {
+        position: relative;
+        top: 5/2/12.5rem;
+        color: #939393;
+        font-size: 40/2/12.5rem;
+      }
+    }
+    .title {
+      font-size: 30/2/12.5rem;
     }
   }
-  .message {
-    position: absolute;
-    right: 20/2/12.5rem;
-    span {
-      line-height: 80/2/12.5rem;
-      color: #000;
-      padding: 0 18/2/12.5rem;
-    }
-    i {
-      position: relative;
-      top: 5/2/12.5rem;
-      color: #939393;
-      font-size: 40/2/12.5rem;
-    }
-  }
-  .title {
-    font-size: 30/2/12.5rem;
-  }
-}
 
-.broadcast {
   .content {
     text-align: left;
     margin-top: 45/12.5rem;
     //购物车为空的状态
-    .empry{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        height: 60/12.5rem;
+    .empry {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60/12.5rem;
+      color: #bdbdbd;
+      i {
+        font-size: 20/12.5rem;
         color: #bdbdbd;
-        i{
-            font-size: 20/12.5rem;
-            color: #bdbdbd;
-            padding: 0 10/12.5rem;
-        }
-        button{
-            border: 1/12.5rem solid #ccc;
-            background: none;
-            padding: 5/12.5rem;
-            margin-left: 10/12.5rem;
-            outline: none;
-        }
+        padding: 0 10/12.5rem;
+      }
+      button {
+        border: 1/12.5rem solid #ccc;
+        background: none;
+        padding: 5/12.5rem;
+        margin-left: 10/12.5rem;
+        outline: none;
+      }
     }
   }
   .submit {
@@ -136,7 +136,7 @@
       /*height: 130/2/12.5rem;*/
       margin-bottom: 5/12.5rem;
     }
-    .m_footer{
+    .m_footer {
       overflow: hidden;
       width: 100%;
       text-align: center;
@@ -144,7 +144,7 @@
       background: #f6f6f6;
       line-height: 80/12.5rem;
       color: #9a9191;
-      hr{
+      hr {
         width: 30%;
         margin: 0 20/12.5rem;
         border: none;
@@ -153,96 +153,97 @@
         display: inline-block;
       }
     }
-    
   }
-  .pb100{
+  .pb100 {
     padding-bottom: 100/12.5rem;
   }
   .moreList {
     float: left;
     width: 50%;
     padding: 0 1%;
-    height:264px;
+    height: 264px;
     box-sizing: border-box;
     .item {
     }
   }
-}
-// 置顶
-#setTop{
-  position: fixed;
-  bottom: 17%;
-  opacity: 0;
-  right: 1%;
-  img{
-    width: 30px;
-  }
-}
-.setTopAnimate{
-  animation: setTopAnimate .3s linear both;
-}
-@keyframes setTopAnimate{
-  from{
-    transform: rotate(360deg) scale(0);
-  }
-  to{
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
-  }
-}
-//添加购物车成功
-.addCart{
-  width: 150/12.5rem;
-  height:100/12.5rem;
-  position: fixed;
-  text-align: center;
-  box-sizing: border-box;
-  padding-top: 20/12.5rem;
-  top: 50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  background:rgba(0,0,0,0.4);
-  color: #fff;
-  animation: addCartSucess .3s linear;
-  // transition: all 3s linear;
-  i{
-    font-size:30/12.5rem;
-  }
-  h3{
-    width: 100%;
-  }
-}
-@keyframes addCartSucess{
-  from{
+  // 置顶
+  #setTop {
+    position: fixed;
+    bottom: 17%;
     opacity: 0;
+    right: 1%;
+    img {
+      width: 30px;
+    }
   }
-  to{
-    opacity: 1;
+  .setTopAnimate {
+    animation: setTopAnimate 0.3s linear both;
+  }
+  @keyframes setTopAnimate {
+    from {
+      transform: rotate(360deg) scale(0);
+    }
+    to {
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+  //添加购物车成功
+  .addCart {
+    width: 150/12.5rem;
+    height: 100/12.5rem;
+    position: fixed;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20/12.5rem;
+    top: 50%;
+    left: 50%;
+    z-index: 999999;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    animation: addCartSucess 0.3s linear;
+    // transition: all 3s linear;
+    i {
+      font-size: 30/12.5rem;
+    }
+    h3 {
+      width: 100%;
+    }
+  }
+  @keyframes addCartSucess {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
-//确认删除提示框
-.mint-msgbox-content{
-  // background: #ff6700;
-  border: none;
-}
-.mint-msgbox{
-  width:95%;
-  padding-bottom: 20px;
-}
-.mint-msgbox-message{
-  font-size: 14px;
-  height: 100px;
-  line-height: 100/12.5rem;
-}
-.mint-msgbox-btns{
-  padding: 0 10px;
-  button{
-    margin: 0 5px;
-  color: #6b6b6b;
-    border: 1px solid #ddd;
+  //确认删除提示框
+  .mint-msgbox-content {
+    // background: #ff6700;
+    border: none;
   }
-  .mint-msgbox-confirm{
-    background: #ff5722;
-    color:#fff;
+  .mint-msgbox {
+    width: 95%;
+    padding-bottom: 20px;
   }
-}
+  .mint-msgbox-message {
+    font-size: 14px;
+    height: 100px;
+    line-height: 100/12.5rem;
+  }
+  .mint-msgbox-btns {
+    padding: 0 10px;
+    button {
+      margin: 0 5px;
+      color: #6b6b6b;
+      border: 1px solid #ddd;
+    }
+    .mint-msgbox-confirm {
+      background: #ff5722;
+      color: #fff;
+    }
+  }
+

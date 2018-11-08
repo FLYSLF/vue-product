@@ -1,7 +1,10 @@
 .broadcast {
   text-align: left;
 }
-.header {
+.broadcast img {
+  width: 100%;
+}
+.broadcast .header {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,30 +16,30 @@
   height: 4rem;
   background: #f2f2f2;
 }
-.header .back {
+.broadcast .header .back {
   position: absolute;
   left: 0.8rem;
 }
-.header .back img {
+.broadcast .header .back img {
   width: 1.6rem;
   height: 1.6rem;
 }
-.header .message {
+.broadcast .header .message {
   position: absolute;
   right: 0.8rem;
 }
-.header .message span {
+.broadcast .header .message span {
   line-height: 3.2rem;
   color: #000;
   padding: 0 0.72rem;
 }
-.header .message i {
+.broadcast .header .message i {
   position: relative;
   top: 0.2rem;
   color: #939393;
   font-size: 1.6rem;
 }
-.header .title {
+.broadcast .header .title {
   font-size: 1.2rem;
 }
 .broadcast .content {
@@ -159,17 +162,17 @@
   height: 264px;
   box-sizing: border-box;
 }
-#setTop {
+.broadcast #setTop {
   position: fixed;
   bottom: 17%;
   opacity: 0;
   right: 1%;
 }
-#setTop img {
+.broadcast #setTop img {
   width: 30px;
 }
-.setTopAnimate {
-  animation: setTopAnimate .3s linear both;
+.broadcast .setTopAnimate {
+  animation: setTopAnimate 0.3s linear both;
 }
 @keyframes setTopAnimate {
   from {
@@ -180,7 +183,7 @@
     opacity: 1;
   }
 }
-.addCart {
+.broadcast .addCart {
   width: 12rem;
   height: 8rem;
   position: fixed;
@@ -189,15 +192,16 @@
   padding-top: 1.6rem;
   top: 50%;
   left: 50%;
+  z-index: 999999;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
-  animation: addCartSucess .3s linear;
+  animation: addCartSucess 0.3s linear;
 }
-.addCart i {
+.broadcast .addCart i {
   font-size: 2.4rem;
 }
-.addCart h3 {
+.broadcast .addCart h3 {
   width: 100%;
 }
 @keyframes addCartSucess {

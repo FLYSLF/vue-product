@@ -11,6 +11,7 @@
 		</TabbarItem>
 		<TabbarItem @transfer="getVal" txt="购物车" mark="shoppingCart" :sel="selected">
 			<i slot="icon" class="iconfont icon-ziyuan"></i>
+			<span slot="cartNum" class="cartNum">{{cartNum}}</span>
 		</TabbarItem>
 		<TabbarItem @transfer="getVal" txt="我的" mark="mine" :sel="selected">
 			<i slot="icon" class="iconfont icon-me"></i>
@@ -19,8 +20,14 @@
 </template>
 
 <script>
-	import TabbarItem from '@/components/TabbarItem'
+	import TabbarItem from '@/components/TabbarItem';
+	import store from "../store/store";
 	export default {
+		computed:{
+			cartNum(){
+				return store.state.cartNum;
+			}
+		},
 		components:{
 			TabbarItem
 		},
@@ -37,7 +44,7 @@
 	}
 </script>
 
-<style scoped>
+<style scoped lang="less">
 	.tabber{
 		height: 4rem;
 		width: 100%;
@@ -50,5 +57,17 @@
 		align-items: center;
 		z-index: 999;
 		background-color: #fff;
+		.cartNum{
+			position: absolute;
+			top:0;
+			right: 13px;
+			color:#fff;
+			border:1px solir red;
+			border-radius: 100%;
+			background:#ff5722;
+			height:15px;
+			width:15px;
+			font-size:12px;
+		}
 	}
 </style>
