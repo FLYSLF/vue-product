@@ -13,7 +13,7 @@
 				<!--新品-->
 				<ClassifyC id="653" class="wear">
 						<router-link to="/Detailsc1" slot="image">
-							<img  src="static/images/t1.jpg"/>
+							<img src="static/images/t1.jpg"/>
 						</router-link>
 				</ClassifyC>	
 				
@@ -269,7 +269,7 @@
 
 
 				})
-//						console.log(this.arr1);
+//						console.log(this.arr);
 //						console.log(this.list_min);
 			})				
 		},
@@ -295,7 +295,7 @@
 
 	.content {
 		width: 100%;
-		margin-top: -3rem;
+		/*margin-top: -3rem;*/
 		margin-bottom: 280/75rem;
 		border-top: 1px solid gainsboro;
 		width: 100%;
@@ -312,11 +312,11 @@
 			border-right:1px solid #eee;
 			box-sizing:border-box;
 			overflow: hidden;
-			height: 45rem;
+			height: 46rem;
 			overflow-y: auto;
 			&::-webkit-scrollbar {display:none};
 			li {
-				height: 3rem;
+				height: 3.4rem;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -331,13 +331,10 @@
 			width: 80%;
 			background: white;
 			float: right;
-			padding: 10/75rem;
-			height: 45rem;
+			padding:0 10/75rem 10/75rem;
+			height: 46rem;
 			overflow: auto;
 			&::-webkit-scrollbar {display:none}
-			/*.wear{
-				margin-top: 40px;
-			}*/
 		}
 	}
 	}

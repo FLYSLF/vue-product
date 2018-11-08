@@ -27,12 +27,6 @@ import Two from "@/pages/mine/two/Two"
 import Classify from '@/pages/classify/Classify';
 import Detailsc from '@/pages/classify/children/Detailsc';
 
-
-//import Find from '@/pages/find/Find'
-//import ShoppingCart from '@/pages/shoppingCart/ShoppingCart'
-//import Mine from '@/pages/mine/Mine'
-
-//import Classify from "@/pages/classify/Classify";
 import Find from "@/pages/find/Find";
 import ShoppingCart from "@/pages/shoppingCart/ShoppingCart";
 import Mine from "@/pages/mine/Mine";
@@ -105,12 +99,6 @@ export default new Router({
         { path: "Homele", component: Homele }
       ]
     },
-//  {
-//
-//    path: '/classify',
-//    name: 'Classify',
-//    component: Classify,
-//  },
     {
     	path:'/Detailsc1',
     	name:'Detailsc',
