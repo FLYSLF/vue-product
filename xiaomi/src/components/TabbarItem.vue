@@ -1,6 +1,7 @@
 <template>
 	<div class="itemWraper" :class="{orange:flag}" @click="clickMe()">
 		<slot name="icon"></slot><br />
+		<slot name="cartNum"></slot>
 		<span>{{txt}}</span>
 	</div>
 </template>
@@ -34,6 +35,7 @@
 
 <style scoped>
 	.itemWraper{
+		position: relative;
 		flex: 1;
 	}
 	.itemWraper i{

@@ -25,7 +25,7 @@
           <div class="item-box" v-for="item in commentList">
               <div class="comment-headers">
                 <div class="avatar-img-box">
-                  <img :src="item.user_avatar" alt="">
+                  <img v-lazy="item.user_avatar" :src="item.user_avatar" alt="">
                 </div>
                 <div class="user-info">
                   <p class="userName" >{{item.user_name}}</p>

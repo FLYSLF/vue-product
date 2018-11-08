@@ -30,8 +30,12 @@ import FindLive from '@/pages/find/FindLive'
 import ShoppingCart from '@/pages/shoppingCart/ShoppingCart'
 import Mine from '@/pages/mine/Mine'
 
-import Classify from "@/pages/classify/Classify";
+import Classify from '@/pages/classify/Classify';
+import Detailsc from '@/pages/classify/children/Detailsc';
+
+
 import Details from "../components/Details";
+
 //更多评论
 import MoreComment from "../components/MoreComment";
 
@@ -103,9 +107,15 @@ export default new Router({
       ]
     },
     {
+    	path:'/Detailsc1',
+    	name:'Detailsc',
+    	component:Detailsc,
+		},
+		{
       path: "/classify",
       name: "Classify",
       component: Classify
+
     },
     {
       path: "/find",

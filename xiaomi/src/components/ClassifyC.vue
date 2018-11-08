@@ -1,38 +1,30 @@
 <template>
 	<div class="classifyC" >
-		<div name="classify">
 			<div class="img">
 				<span class="image"><slot name="image"></slot></span>
 			</div>
-			
-		</div>
 	</div>
 </template>
 
 <script>
 	export default {
-		//props: ["sj", "info", "picture","title"]
+//		data(){
+//			return{
+//				Array:[]
+//			}
+//		},
+//		mounted(){
+//			this.axios.get("/api/listdata").then((res)=>{
+//				this.Array = res.data.data
+//				console.log(this.Array)
+//			})
+//		}
 	}
 </script>
 
 <style lang="less">
 	.classifyC {
 		width: 100%;
-		.img {
-			width: 100%;
-			.image {
-				display: inline-block;
-				img{
-					width: 100%;
-				}
-			}
-		}
-		/*.phone {
-			margin: 15px auto;
-			text-align: center;
-			font-size: 16px;
-			color: black;
-		}*/
 		.sj-info {
 			width: 100%;
 			margin: 0 auto;

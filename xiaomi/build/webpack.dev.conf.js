@@ -22,6 +22,10 @@ var app = express();
 var find_itemData = require("../src/data/find_item");
 
 var listData = require("../src/listdata.json");
+//分类详情
+var Detailsc = require("../src/data/Detailsc.json");
+var Detailsc_bottom = require("../src/data/Details_bottom.json");
+
 var serice = require("../src/data/Serice1.json");
 //购物车更多 json数据
 var cart_itemData = require("../src/data/cart_item.json");
@@ -51,7 +55,17 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   				data:listData
   			});
   		});
-  		app.get("/api/find_item",function(req,res){
+  		app.get("/api/Detailsc",function(req,res){
+  			res.json({
+  				data:Detailsc
+  			});
+  		});
+  		app.get("/api/Detailscbottom",function(req,res){
+  			res.json({
+  				data:Detailsc_bottom
+  			});
+  		});
+  		app.get("/api/findItem",function(req,res){
   			res.json({
   				data:find_itemData
   			});

@@ -7,7 +7,7 @@
 		</h2>
 		<div class="info_list">
 			<div v-for='item in info_list' class="newsj">
-					<img  :src="item.img_url"/>
+					<img v-lazy="item.img_url"  :src="item.img_url"/>
 					<p>{{item.product_name}}</p>
 			</div>
 		</div>

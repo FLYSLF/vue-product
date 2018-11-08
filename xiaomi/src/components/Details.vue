@@ -16,15 +16,10 @@
           <!-- 商品展示轮播 -->
           <div class="swiper-container" id="swiper1">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-               <img :src="json.image_url" alt="">
+              <div class="swiper-slide" v-for="item in [1,2,3]">
+               <img v-lazy="json.image_url" :src="json.image_url" alt="">
               </div>
-              <div class="swiper-slide">
-               <img :src="json.image_url" alt="">
-              </div>
-              <div class="swiper-slide">
-               <img :src="json.image_url" alt="">
-              </div>
+            
             </div>
             <div style="text-align:center;" class="swiper-pagination"></div>
           </div>
@@ -54,7 +49,7 @@
                   <div class="swiper-box">
                     <div class="comment-header">
                       <div class="avatar-img-box">
-                        <img :src="item.user_avatar" alt="">
+                        <img v-lazy="item.user_avatar" :src="item.user_avatar" alt="">
                       </div>
                       <div class="user-info">
                         <p class="userName">{{item.user_name}}</p>
@@ -69,7 +64,7 @@
                     </div>
                     <div class="comment-images">
                       <div class="photos" v-for="imgItem in item.comment_images">
-                       <img :src="imgItem" alt="">
+                       <img v-lazy="imgItem" :src="imgItem" alt="">
                       </div>
                     </div>
                     <div class="replay" v-show="item.reply_content">
@@ -85,7 +80,7 @@
           </div>
           <div class="sp-detail">
             <h3>商品详情</h3>
-            <img v-for="item in imgList" v-show="item.body.img_url" :src="item.body.img_url" alt="">
+            <img v-lazy="item.body.img_url" v-for="item in imgList" v-show="item.body.img_url" :src="item.body.img_url" alt="">
           </div>
           <div class="moreGoods">
             <h2>为你推荐</h2>
@@ -113,10 +108,14 @@
             <div class="num" v-show="cartNum">{{cartNum}}</div>
             </a>
             <div class="action-box">
-              <a>加入购物车</a>
+              <a @click="addToCart()">加入购物车</a>
             </div>
           </div>
         </footer>
+        <div :class="{addCart:addCartSuccess}">
+          <i class="iconfont">&#xe654;</i>
+          <h2>添加成功</h2>
+        </div>
         </div>
         
         
@@ -136,10 +135,14 @@ export default {
       littleList: [],
       imgList: [],
       moreList: [],
-      setTop1: false
+      setTop1: false,
+      addCartSuccess:false
     };
   },
   computed: {
+    // cartNum(){
+    //   return store.state.cartNum;
+    // },
     tabbarFlag() {
       return store.state.tabbarFlag;
     },
@@ -150,7 +153,7 @@ export default {
   methods: {
     back() {
       window.history.back();
-      store.state.tabbarFlag = true;
+      // store.state.tabbarFlag = true;
     },
     messageShareF(e) {
       e.stopPropagation();
@@ -168,16 +171,26 @@ export default {
     //置顶
     settop() {
       var timer = setInterval(() => {
-        document.documentElement.scrollTop -=
-          document.documentElement.scrollTop / 10;
+        document.documentElement.scrollTop -= document.documentElement.scrollTop / 5;
         if (document.documentElement.scrollTop <= 0) {
           clearInterval(timer);
         }
+        document.addEventListener("touchmove",function(){
+         clearInterval(timer)
+        })
       }, 16);
     },
     breake(path){
       this.$router.push(path);
       store.state.tabbarFlag = true;
+    },
+    addToCart(){
+      store.state.cartFoodsList.push(this.json);
+      this.cartNum++;
+      this.addCartSuccess = true;
+      setTimeout(() =>{
+        this.addCartSuccess = false;
+      },1500)
     }
     
   },
@@ -195,7 +208,8 @@ export default {
       setTimeout(() => {
         //只能在这里用定时器实例swiper 不然数据还未出现 siwper只能检测到一屏
         new Swiper("#swiper2", {
-          autoplay: false
+          autoplay: false,
+          lazy: true, 
         });
       });
     });
@@ -209,9 +223,10 @@ export default {
     //轮播
     new Swiper("#swiper1", {
       pagination: ".swiper-pagination",
-      autoplay: false
+      autoplay: false,
+      lazy: true,
     });
-    //置顶
+    
     window.onscroll = () => {
       var scrollTop =
         document.documentElement.scrollTop + document.body.scrollTop;
