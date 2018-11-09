@@ -23,7 +23,7 @@
 		
 		<div class="video">
 			<video controls="controls" protes>
-				<source src="../../assets/video/mi2.mp4"></source>
+				<source src="../../assets/video/mi1.mp4"></source>
 			</video> 
 			<p>颜值致胜VS实力为王，这就是青春</p>
 			<span>09-20</span>
@@ -32,7 +32,7 @@
 		
 		<div class="video">
 			<video controls="controls" protes>
-				<source src="../../assets/video/mi3.mp4"></source>
+				<source src="../../assets/video/mi1.mp4"></source>
 			</video> 
 			<p>小米8青春版开箱体检，当青春遇到青春</p>
 			<span class="sp1">9-19</span>
@@ -41,7 +41,7 @@
 		
 		<div class="video">
 			<video controls="controls" protes>
-				<source src="../../assets/video/mi4.mp4"></source>
+				<source src="../../assets/video/mi1.mp4"></source>
 			</video> 
 			<p>刷地铁！刷公交！刷门禁！小米手环3，NFC版来呐</p>
 			<span class="sp1">09-13</span>
@@ -50,7 +50,7 @@
 		
 		<div class="video">
 			<video controls="controls" protes>
-				<source src="../../assets/video/mi5.mp4"></source>
+				<source src="../../assets/video/mi1.mp4"></source>
 			</video> 
 			<p>小米手机"SOS紧急求助"等安全功能大讲堂</p>
 			<span class="sp1">09-06</span>
@@ -59,7 +59,7 @@
 		
 		<div class="video">
 			<video controls="controls" protes>
-				<source src="../../assets/video/mi6.mp4"></source>
+				<source src="../../assets/video/mi1.mp4"></source>
 			</video> 
 			<p>小米MIX3新品开箱体检，当科技AI上艺术</p>
 			<span class="sp1">10-25</span>
@@ -68,7 +68,7 @@
 		
 		<div class="video">
 			<video controls="controls" protes>
-				<source src="../../assets/video/mi7.mp4"></source>
+				<source src="../../assets/video/mi1.mp4"></source>
 			</video> 
 			<p>小米MLX3新品，故宫发布会</p>
 			<span class="sp1">10-25</span>
