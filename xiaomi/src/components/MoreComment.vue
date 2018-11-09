@@ -74,16 +74,13 @@ export default {
     },
     checkeds(){
       this.checked = !this.checked; 
-      
     //  !this.checked ? this.commentList = this.commentList.filter((item,index)=>item.comment_images.length!=0):console.log(newArr);
      if(this.checked){
        this.commentList = [...this.newArr];
      }else{
        this.newArr = [...this.commentList];
        this.commentList = this.commentList.filter((item,index)=>item.comment_images.length!=0);
-
      }
-      
     }
   },
   mounted() {
