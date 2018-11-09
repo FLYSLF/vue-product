@@ -4,11 +4,6 @@
       <p>内容加载中......</p>
     </div>
     <div class="content" v-show="toggleShow">
-      <p>这是页面二内容区</p>
-      <p>这是页面二内容区</p>
-      <p>这是页面二内容区</p>
-      <p>这是页面二内容区</p>
-      <p>这是页面二内容区</p>
     </div>
  </div>
 </template>
