@@ -3,8 +3,11 @@ import Vue from "vue";
 Vue.use(Vuex);
 let store = new Vuex.Store({
 	state:{
+		//底部导航显示隐藏
 		tabbarFlag:true,
+		//详情数据
 		detailsJson:"",
+		//购物车总数
 		cartNum:2,
 		cartFoodsList:[
 			{
@@ -14,6 +17,9 @@ let store = new Vuex.Store({
 				colorList: ["黑色", "白色", "红色", "蓝色", "流沙金"],
 				image_url: require("../assets/img/hongmi6.jpg"),
 				price: 749,
+				action:{
+					path:1
+				},
 				sum: 1
 			  },
 			  {
@@ -23,6 +29,9 @@ let store = new Vuex.Store({
 				colorList: ["黑色", "白色", "红色", "蓝色", "流沙金"],
 				image_url: require("../assets/img/shouhuang3.png"),
 				price: 199,
+				action:{
+					path:2
+				},
 				sum: 1
 			  }
 		]

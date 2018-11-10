@@ -5,7 +5,7 @@
 					<img v-show="json.flag" src="../assets/img/check_press.png" alt=""/>
 					<img v-show="!json.flag" src="../assets/img/check_normal.png" alt="">
 			</div>
-			<div class="img" >
+			<div class="img" @click="details()">
 					<img :src="json.image_url" alt="">
 			</div>
 			<div class="info" :class="{active:deleteFlag}">
@@ -25,6 +25,7 @@
     
 </template>
 <script>
+import store from "@/store/store.js";
 export default {
   props: ["json", "deleteFlag"],
   data() {
@@ -35,6 +36,13 @@ export default {
   computed: {
     bol: function() {
       return this.json.flag ? 1 : 0;
+    }
+  },
+  methods:{
+     details() {
+      this.$router.push("/details" + this.json.action.path);
+      //通过过vuex store传入当前数据
+      store.state.detailsJson = this.json;
     }
   }
 };

@@ -112,7 +112,7 @@
             </div>
           </div>
         </footer>
-        <div :class="{addCart:addCartSuccess}">
+        <div v-show="addCartSuccess" :class="{addCart:addCartSuccess}">
           <i class="iconfont">&#xe654;</i>
           <h2>添加成功</h2>
         </div>
