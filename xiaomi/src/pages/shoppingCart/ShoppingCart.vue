@@ -70,7 +70,7 @@ export default {
   },
   data() {
     return {
-      // goodsList: [],
+      // goodsList: store.state.cartFoodsList,
       moreList: [],
       allcheck: true,
       deleteFlag: false,
@@ -139,17 +139,22 @@ export default {
       // this.deleteFlag ? this.goodsList.map(item => (item.flag = false)) : this.goodsList.map((item,index) => (arr.length>=index-1?arr[index].flag = true:1));
       if (!this.deleteFlag) {
         //保存之前状态
+        console.log("goodsList",this.goodsList)
         this.goodsList.map(item => {
           item.flag ? this.checkArr.push(item) : this.checkArr;
         });
+        console.log("checkArr",this.checkArr)
         this.goodsList.map(item => (item.flag = false));
       } else {
-        this.goodsList.map((item, index) => {
-          item.flag = false;
-          if (this.checkArr.length >= index + 1) {
-            this.checkArr[index].flag = true;
-          }
-        });
+        this.checkArr.forEach((item)=>{
+          item.flag = true;
+        })
+        // this.goodsList.map((item, index) => {
+        //   item.flag = false;
+          // if (this.checkArr.length >= index + 1) {
+          //   this.checkArr[index].flag = true;
+          // }
+        // });
         this.checkArr = [];
       }
       //切换完成和编辑状态

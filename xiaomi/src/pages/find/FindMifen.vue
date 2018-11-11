@@ -2,7 +2,7 @@
 	<div class="findmifen">
 		<div class="head">
 			<div class="gift">
-				<a><i class="iconfont icon-xiaoyuhao"></i></a>
+				<router-link to="/find"><i class="iconfont icon-xiaoyuhao"></i></router-link>
 				<span>礼品卡</span>
 			</div>
 			<div class="right">

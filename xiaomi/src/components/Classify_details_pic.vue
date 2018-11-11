@@ -18,10 +18,7 @@
 		},
 		mounted() {
 			this.axios.get("/api/Detailscbottom").then((res) => {
-
 				this.arr = res.data.data.recommend_list
-//				console.log(res.data);
-
 			});
 		}
 		

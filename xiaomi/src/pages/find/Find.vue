@@ -11,13 +11,13 @@
 		<div class="li-fin">
 			<router-link class="fr" to="/FindMifen">
 				<div>	
-				<img src="../../assets/img/a1.png" />
-				<span>小米礼品卡</span>
+				<img src="../../assets/img/a2.png" />
+				<span>小米礼品</span>
 				</div>
 			</router-link>
 			<a class="fr">
 				<div>
-				<img src="../../assets/img/a2.png" />
+				<img src="../../assets/img/a4.png" />
 				<span>小米闪购</span>
 				</div>
 			</a>
@@ -29,14 +29,14 @@
 			</a>
 			<a class="fr">
 				<div>
-				<img src="../../assets/img/a4.png" />
+				<img src="../../assets/img/a2.png" />
 				<span>小米分期</span>
 				</div>
 			</a>
 			<a class="fr">
 				<div>
-				<img src="../../assets/img/a5.png" />
-				<span>小米信用卡</span>
+				<img src="../../assets/img/a1.png" />
+				<span>小米信用</span>
 				</div>
 			</a>
 		</div>
@@ -88,21 +88,21 @@
 			</div>
 		</div>
 		<div class="miaosha">
-			<a href="#">
+			<router-link to="/FindLive" href="#">
 				<img src="../../assets/img/miaosha.jpg" width="100%" />
 				<div class="een">
 					<h4>万圣节，小米超值预售来袭！</h4>
 					<a href="#">10月29日-11月1日，小米万圣节，等你来领糖~</a>
 				</div>
-			</a>
+			</router-link>
 			<div class="foot-a">
 				<a href="" class="fl-a">20小时前</a>
 				<a href="" class="fr-a">4646阅读</a>
 			</div>
 		</div>
 		<div class="miaosha jimu">
-			<a href="">
-				<img src="../../assets/img/jimu.jpg" width="100%" height="105" />
+			<router-link  to="/Detailsc1">
+				<img src="../../assets/img/jimu2.jpg" width="100%" height="105" />
 				<div class="een">
 					<h4>米兔指尖积木，发挥想像自由拼插，你的解压神器</h4>
 					<span>这一块小小的米兔指尖积木，你能拼出多少种形状</span>
@@ -111,7 +111,7 @@
 					<span class="fl-a">6天前</span>
 					<span class="fr-a">11235阅读</span>
 				</div>
-			</a>
+			</router-link>
 		</div>
 		<div class="solid"></div>
 		<div class="see">
@@ -120,45 +120,48 @@
 		<div class="puality">
 			<h2>品质生活</h2>
 			<div class="imgs">
-				<img src="../../assets/img/quality.jpg" />
+				<router-link to="/Detailsc1">
+					<img src="../../assets/img/quality.jpg" />
+
+				</router-link>
 			</div>
 			<div class="quito">
 				<div>
 					<h5>米家驱蚊器</h5>
 					<span><strong>￥59</strong></span>
 				</div>
-				<a href="">风扇驱动挥发，静享无忧以夏</a>
+				<router-link to="/Detailsc1">风扇驱动挥发，静享无忧以夏</router-link>
 			</div>
 		</div>
 		<div class="LED">
 			<div class="inte">
-				<a href="">
-					<img src="../../assets/img/LED.png" />
-				</a>
+				<router-link to="/Detailsc1">
+					<img src="../../assets/img/LED.png"/>
+				</router-link>
 				<h5>智能LED吸顶灯</h5>
 				<span><strong>￥379</strong></span>
 			</div>
 			<div class="router">
-				<a href="">
+				<router-link to="/Detailsc1">
 					<img src="../../assets/img/router.jpg" />
-				</a>
+				</router-link>
 				<h5>小米路由器HD/Pro</h5>
 				<span><strong>￥349起</strong></span>
 				<del>￥499</del>
 			</div>
 			<div class="plate">
-				<a href="">
+				<router-link to="/Detailsc1">
 					<img src="../../assets/img/chaban.jpg" />
-				</a>
+				</router-link>
 				<h5>小米米家插线板</h5>
 				<span>
 				<strong>￥24.9起</strong>
 			</span>
 			</div>
 			<div class="router">
-				<a href="">
+				<router-link to="/Detailsc1">
 					<img src="../../assets/img/computer.jpg" />
-				</a>
+				</router-link>
 				<h5>游戏本8代增强</h5>
 				<span>
 				<strong>￥6699起</strong>
@@ -166,13 +169,13 @@
 			</div>
 		</div>
 		
-		<div>
-<h2>出行必备</h2>
+		<div class="ddt">
+           <h2>出行必备</h2>
 		<div class="travel">
 			<div class="recorder">
-				<a href="">
+				<router-link to="/Detailsc1">
 					<img src="../../assets/recorder.jpg" />
-				</a>
+				</router-link>
 				<h5>70迈智能记录仪</h5>
 				<span>
 				<strong>￥199</strong>
@@ -180,9 +183,9 @@
 			</div>
 
 			<div class="source">
-				<a href="">
+				<router-link to="/Detailsc1">
 					<img src="../../assets/img/source.jpg" />
-				</a>
+				</router-link>
 				<h5>移动电源2C(20000mAh)</h5>
 				<span>
 				<strong>￥129</strong>
@@ -190,9 +193,9 @@
 			</div>
 
 			<div class="recorder">
-				<a href="">
+				<router-link to="/Detailsc1">
 					<img src="../../assets/img/selfie.jpg" />
-				</a>
+				</router-link>
 				<h5>小米支架式自拍杆</h5>
 				<span>
 				<strong>￥89</strong>
@@ -200,9 +203,9 @@
 			</div>
 
 			<div class="source">
-				<a href="">
-					<img src="../../assets/img/shaving1.jpg" />
-				</a>
+				<router-link to="/Detailsc1">
+					<img  src="../../assets/img/shaving1.jpg" />
+				</router-link>
 				<h5>便携电动剃须刀</h5>
 				<span>
 				<strong>￥179</strong>
@@ -213,49 +216,72 @@
 		
 		<div class="travel">
 			<div class="recorder"  v-for="item in arr">
-				<a href="">
-					<img :src="item.image" />
-				</a>
+				<router-link to="/Detailsc1">
+					<img v-lazy="item.image" :src="item.image" />
+				</router-link>
 				<h5>{{item.name}}</h5>
 				<span>
 				<strong>￥{{item.price}}</strong>
 			</span>
 			</div>
-			</div>
-
-			
-		<!--<div class="mobile" v-for="item in arr" >
-			<span>{{item[0].commentcontent}}</span>
-			<img :src="item[0].image" />
-		</div>-->
+		</div>
+	<!--置顶效果-->
+	<div class="ding" @click="settop()">
+		<img src="../../assets/img/ZS2.png"/>
 	</div>
+	</div>
+	
+	
 </template>
 
 <script>
-	import Myheader from '@/components/FindHeader'
-	import Banner from '@/components/FindBanner'
-	export default {
-		components: {
-			Myheader,
-			Banner
-		},
-		data() {
-			return {
-				arr: []
-			}
-		},
-		mounted() {
-			this.axios.get("/api/findItem").then((res) => {
-				this.arr = res.data.data;
-				console.log(this.arr)
-			})
-		}
-	}
+import { Lazyload } from "mint-ui";
+import Myheader from "@/components/FindHeader";
+import Banner from "@/components/FindBanner";
+import store from "../../store/store";
+
+export default {
+  components: {
+    Myheader,
+    Banner
+  },
+  data() {
+    return {
+      arr: []
+    };
+  },
+  mounted() {
+    this.axios.get("/api/findItem").then(res => {
+      this.arr = res.data.data;
+      console.log(this.arr);
+    });
+    store.state.tabbarFlag = true;
+  },
+  methods: {
+    settop() {
+      var timer = setInterval(() => {
+        document.documentElement.scrollTop -=
+          document.documentElement.scrollTop / 10;
+        if (document.documentElement.scrollTop <= 0) {
+          clearInterval(timer);
+        }
+	  }, 16);
+	   document.addEventListener("touchmove",function(){
+        clearInterval(timer)
+      })
+    }
+  }
+};
 </script>
 
 <style lang="less">
-	@import "../../assets/css/find.css";
-	.headerBanner {
-		margin-top: 30/12.5rem;
-	}
+@import "../../assets/css/find.css";
+.headerBanner {
+  margin-top: 30/12.5rem;
+}
+
+img[lazy="loading"] {
+  height: 100%;
+  margin: auto;
+}
 </style>

@@ -27,7 +27,7 @@
 </script>
 
 <style lang="less">
-	img[lazy=loading] {
+	img[lazy=loading]{
 	   height: 100%;
 	   margin: auto;
 	   background: orange;

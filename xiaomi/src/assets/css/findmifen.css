@@ -22,6 +22,8 @@ h2 {
 }
 .head .gift i {
   vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
 .head .right {
   margin-left: 20.8rem;

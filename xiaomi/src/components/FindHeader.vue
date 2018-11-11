@@ -2,7 +2,7 @@
 	<div class="headerWrap">
 		<div class="seach-head">
 			<span class="leftImg"><slot name="leftImg"></slot></span>
-			<input type="text" placeholder="搜索商品" />		
+			<input type="text" placeholder="搜索商品"/>		
 			<span class="rightImg">
 					<slot name="rightImg"></slot>
 			</span>
@@ -26,10 +26,11 @@
 	.seach-head{
 		width: 80%;
 		height: 40/2px;
-		border: 1px solid #666;
+		border: 1px solid #939393;
 		position: absolute;
 		top: 10/2px;
 		left: 80/2px;
+		border-radius: 3px;
 		input{
 			/*position: absolute;*/
 			width: 100%;
