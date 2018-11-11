@@ -26,12 +26,15 @@ import Two from "@/pages/mine/two/Two"
 
 import Classify from '@/pages/classify/Classify';
 import Detailsc from '@/pages/classify/children/Detailsc';
+import FenQi from "@/pages/classify/children/divide/FenQi";
+import HuaBei from "@/pages/classify/children/divide/HuaBei"
 
 import Find from "@/pages/find/Find";
 import ShoppingCart from "@/pages/shoppingCart/ShoppingCart";
 import Mine from "@/pages/mine/Mine";
 import Details from "../components/Details";
-import FindMifen from '@/pages/find/FindMifen'
+import FindMifen from '@/pages/find/FindMifen';
+
 
 //更多评论
 import MoreComment from "../components/MoreComment";
@@ -107,6 +110,11 @@ export default new Router({
     	path:'/Detailsc1',
     	name:'Detailsc',
     	component:Detailsc,
+    	children: [
+        { path: "", component: FenQi },
+        { path: "FenQi", component: FenQi },
+        { path: "HuaBei", component: HuaBei },
+      ]
 		},
 		{
       path: "/classify",

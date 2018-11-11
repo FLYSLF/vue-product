@@ -1,5 +1,5 @@
 <template>
-	<div class="swiper-container" id="swiper-container">
+	<div class="swiper-container" id="swiper-container" >
 	        <div class="swiper-wrapper classify_swiper">
 	            <div class="swiper-slide">
 	            	<div class="swiper_top">
@@ -81,7 +81,6 @@
 	            		<em>官方回复：</em>{{arr4.reply_content}}
 	            	</div>
 	            </div>
-	            
 	        </div>
 	    </div>
 </template>
@@ -95,24 +94,38 @@
 				arr1: [],
 				arr2: [],
 				arr3: [],
-				arr4: []
+				arr4: [],
+				arr5: [],
 			}
 		},
 		
 		mounted() {
+//			var time = new Date().getTime();
+//			var newTime = 0;
 			this.axios.get("/api/Detailsc").then((res) => {
 				
 				this.arr1 = res.data.data.goods_share_datas.comments.list[0]
 				this.arr2 = res.data.data.goods_share_datas.comments.list[2]
 				this.arr3 = res.data.data.goods_share_datas.comments.list[3]
 				this.arr4 = res.data.data.goods_share_datas.comments.list[4]
-			}),
+				this.arr5 = res.data.data.goods_info[6].instalment.list
+		   		this.$emit('change',this.arr5)
+//				console.log(res.data.data)
+//				console.log(this.arr5)
+//				newTime = new Date().getTime();
+//				console.log(newTime - time)
+			});
+			
 			new Swiper('#swiper-container', {
-		        slidesPerView: 1.2,
-		        paginationClickable: true,
-		        spaceBetween: .5,
-		        freeMode: true
-		    })
+//		        slidesPerView: 1.2,
+//		        paginationClickable: true,
+//		        spaceBetween: .5,
+//		        freeMode: true
+		   });
+//		   setTimeout(()=>{
+//				console.log(this.arr5)
+//		   
+//		   },46);
 		}
 
 	}
