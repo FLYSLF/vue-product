@@ -146,6 +146,9 @@ export default {
         console.log("checkArr",this.checkArr)
         this.goodsList.map(item => (item.flag = false));
       } else {
+        this.goodsList.forEach(item=>{
+          item.flag = false;
+        })
         this.checkArr.forEach((item)=>{
           item.flag = true;
         })
@@ -198,14 +201,10 @@ export default {
     //置顶
     settop() {
       var timer = setInterval(() => {
-        document.documentElement.scrollTop -= document.documentElement.scrollTop / 5;
-        if (document.documentElement.scrollTop <= 0) {
-          clearInterval(timer);
-        }
+         document.body.scrollTop == 0? document.documentElement.scrollTop -= document.documentElement.scrollTop / 5 :document.body.scrollTop -= document.body.scrollTop / 5;
+        if (document.body.scrollTop <= 0 && document.documentElement.scrollTop <= 0) clearInterval(timer);
       }, 16);
-      document.addEventListener("touchmove",function(){
-        clearInterval(timer)
-      })
+      document.addEventListener("touchmove",()=>{clearInterval(timer)})
     }
   }
 };
