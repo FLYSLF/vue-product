@@ -277,19 +277,14 @@
 				this.zhineng = this.arr8.category_list[2].body.items
 				//电源
 				this.dianyuan = this.arr9.category_list[2].body.items
-//							console.log(this.arr4);
-				
-				
 //						拿取每一项的名字
 				this.list_min.map((item)=>{
 					this.category_name.push(item.category_name)
 
-//					console.log(item);
+//					console.log(this.arr);
 
 
 				})
-//						console.log(this.arr);
-//						console.log(this.list_min);
 			})				
 		},
 		methods:{

@@ -171,14 +171,10 @@ export default {
     //置顶
     settop() {
       var timer = setInterval(() => {
-        document.documentElement.scrollTop -= document.documentElement.scrollTop / 5;
-        if (document.documentElement.scrollTop <= 0) {
-          clearInterval(timer);
-        }
-        document.addEventListener("touchmove",function(){
-         clearInterval(timer)
-        })
+         document.body.scrollTop == 0? document.documentElement.scrollTop -= document.documentElement.scrollTop / 5 :document.body.scrollTop -= document.body.scrollTop / 5;
+        if (document.body.scrollTop <= 0 && document.documentElement.scrollTop <= 0) clearInterval(timer);
       }, 16);
+      document.addEventListener("touchmove",()=>{clearInterval(timer)})
     },
     breake(path){
       this.$router.push(path);

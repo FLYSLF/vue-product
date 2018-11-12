@@ -11,7 +11,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="swiper-container my-banner">
+		<div class="swiper-container my-banner" id="c_w">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" v-for="(item,index) in arr1">
 					<img :src="item.img_url" />
@@ -48,11 +48,37 @@
 			</div>
 		</div>
 		<div class="bar">
-			<p>
+			<p @click="ShouPup">
 				分期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<span>小米分期&nbsp;/&nbsp;花呗分期</span>
 				<i class="iconfont icon-dayuhao1"></i>
 			</p>
+			<mt-popup width="100%" v-model="popupVisible" popup-transition="popup-fade" closeOnClickModal="true" position="bottom">
+
+				<div class="popup">
+					<div class="detail_popup">
+						<img src="../../../../static/images/message.png" />
+						<div class="message_right">
+							<h4>￥3599</h4>
+							<i @click="detailClose" class="iconfont">&#xe65e;</i>
+							<span>小米MIX3全网通版8GB+128GB黑色</span>
+						</div>
+					</div>
+					<div class="divide">
+						<span :class="{active:nowIndex==0}" @click="nowIndex=0">
+							<router-link to="/Detailsc1/FenQi">小米分期</router-link>
+						</span>
+						
+						<span :class="{active:nowIndex==1}" @click="nowIndex=1">
+							<router-link to="/Detailsc1/HuaBei">花呗分期</router-link>
+						</span>
+					</div>
+					<div>
+						<router-view></router-view>
+					</div>
+				</div>
+
+			</mt-popup>
 		</div>
 		<div class="bar">
 			<p>
@@ -84,18 +110,16 @@
 			</p>
 		</div>
 
-		<classify_details>
-
-		</classify_details>
+		<classify_details @change="getJson"></classify_details>
 
 		<div class="more">
 			更多评论
 			<i class="iconfont icon-jiantou1"></i>
 		</div>
 		<div class="picture">
-			<img src="../../../assets/img/footerNavImg/class1.png" />
-			<img src="../../../assets/img/footerNavImg/class2.png" />
+
 			<img src="../../../assets/img/footerNavImg/class3.png" />
+			<img src="../../../assets/img/footerNavImg/class1.png" />
 			<img src="../../../assets/img/footerNavImg/class4.png" />
 			<img src="../../../assets/img/footerNavImg/class5.png" />
 			<img src="../../../assets/img/footerNavImg/class6.png" />
@@ -120,7 +144,7 @@
 				</a>
 				<a class="cart">
 					<i class="iconfont icon-ziyuan"></i> 购物车
-					
+
 				</a>
 				<div class="action-box">
 					<a>加入购物车</a>
@@ -145,14 +169,17 @@
 				arr: [],
 				arr1: [],
 				messageShareFlag: false,
-				BackTop1: false
+				BackTop1: false,
+				popupVisible: false,
+				arr2: [],
+				nowIndex: 0
 			};
 		},
 		computed: {
 			tabbarFlag() {
 				return store.state.tabbarFlag;
 			}
-			
+
 		},
 		mounted() {
 			store.state.tabbarFlag = false;
@@ -161,14 +188,14 @@
 
 				this.arr = res.data.data.goods_info[1].class_parameters.list
 				this.arr1 = res.data.data.goods_share_datas.gallery_view
-
+				//						console.log(this.arr1);
 			});
 			observer: true
 
 			observeParents: true
 
 			var swiper = new Swiper('.swiper-container', {
-				loop: true,
+				//				loop: true,
 				pagination: '.swiper-pagination',
 				paginationClickable: true,
 				observer: true, //修改swiper自己或子元素时，自动初始化swiper
@@ -196,15 +223,27 @@
 			//置顶
 			BackTop() {
 				var timer = setInterval(() => {
-					document.documentElement.scrollTop -= document.documentElement.scrollTop / 5;
-					if(document.documentElement.scrollTop <= 0) {
-						clearInterval(timer);
-					}
+					document.body.scrollTop == 0? document.documentElement.scrollTop -= document.documentElement.scrollTop / 5 :document.body.scrollTop -= document.body.scrollTop / 5;
+					if (document.body.scrollTop <= 0 && document.documentElement.scrollTop <= 0) clearInterval(timer);
 				}, 16);
+				document.addEventListener("touchmove",()=>{clearInterval(timer)})
 			},
 			breake(path) {
 				this.$router.push(path);
 				store.state.tabbarFlag = true;
+			},
+			ShouPup() {
+				this.popupVisible = true;
+			},
+			detailClose() {
+				this.popupVisible = false;
+
+			},
+			getJson(json) {
+				//				console.log(json)
+
+				this.arr2 = json;
+				//				console.log(this.arr2)
 			}
 		}
 
@@ -385,7 +424,7 @@
 			background: ghostwhite;
 			text-align: left;
 			text-indent: 1.5rem;
-			color: gray;
+			color: black !important;
 			border-bottom: 1/75rem solid gainsboro;
 			border-top: 1/75rem solid gainsboro;
 			i {
@@ -429,6 +468,68 @@
 		i {
 			vertical-align: -.2rem;
 			font-size: 1.5rem;
+		}
+	}
+	
+	.mint-popup-bottom {
+		width: 100%;
+		border-radius: 1rem 1rem 0 0;
+	}
+	
+	.popup {
+		padding: 1.5rem;
+		height: 36.5rem;
+		.detail_popup {
+			img {
+				width: 10rem;
+				height: 10rem;
+				float: left;
+			}
+			.message_right {
+				display: inline-block;
+				float: right;
+				width: 16rem;
+				text-align: left;
+				padding-top: 1rem;
+				position: relative;
+				h4 {
+					color: orange;
+					font-size: 1.5rem;
+					display: inline-block;
+				}
+				i {
+					display: inline-block;
+					font-size: 1.6rem;
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+				span {
+					display: inline-block;
+					line-height: 2rem;
+					color: black;
+				}
+			}
+		}
+		.divide {
+			width: 100%;
+			margin-top:12rem;
+			border: 1/75rem solid grey;
+			span{
+				display:inline-block;
+				width:45%;
+				height:3rem;
+				line-height: 3rem;
+				color: black !important;
+			}
+			span:nth-child(1){
+			    border-right: 1/75rem solid grey;
+			    font-size: 1.2rem;
+			    
+			}
+			.active>a {
+				color: orange !important;
+			}
 		}
 	}
 	

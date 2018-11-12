@@ -32,9 +32,14 @@ import Mine from '@/pages/mine/Mine'
 
 import Classify from '@/pages/classify/Classify';
 import Detailsc from '@/pages/classify/children/Detailsc';
+import FenQi from "@/pages/classify/children/divide/FenQi";
+import HuaBei from "@/pages/classify/children/divide/HuaBei"
 
 
 import Details from "../components/Details";
+
+
+
 
 //更多评论
 import MoreComment from "../components/MoreComment";
@@ -110,6 +115,11 @@ export default new Router({
     	path:'/Detailsc1',
     	name:'Detailsc',
     	component:Detailsc,
+    	children: [
+        { path: "", component: FenQi },
+        { path: "FenQi", component: FenQi },
+        { path: "HuaBei", component: HuaBei },
+      ]
 		},
 		{
       path: "/classify",
