@@ -11,7 +11,7 @@ import Vueaxios from 'vue-axios'
 import Mint from "mint-ui"
 import "mint-ui/lib/style.css"
 
-import Store from "./store/store"
+import store from "./store/store"
 
 Vue.use(Mint);
 
@@ -22,7 +22,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  Store,
+  store,
   components: { App },
   template: '<App/>',
   data: {

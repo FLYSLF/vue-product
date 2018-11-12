@@ -232,7 +232,7 @@
 		},
 		
 		mounted(){
-			store.state.tabbarFlag = true;
+			this.$store.state.tabbarFlag = true;
 			//访问接口
 			//var That = this;
 			this.axios.get("/api/listdata").then((res)=>{		

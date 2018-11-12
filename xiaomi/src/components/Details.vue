@@ -122,14 +122,14 @@
     
 </template>
 <script>
-import store from "@/store/store.js";
+// import store from "@/store/store.js";
 import "@/assets/lib/swiper/js/swiper.js";
 import axios from "axios";
 
 export default {
   data() {
     return {
-      cartNum:store.state.cartNum,
+      cartNum:this.$store.state.cartNum,
       messageShareFlag: false,
       commentList: [],
       littleList: [],
@@ -144,10 +144,10 @@ export default {
     //   return store.state.cartNum;
     // },
     tabbarFlag() {
-      return store.state.tabbarFlag;
+      return this.$store.state.tabbarFlag;
     },
     json() {
-      return store.state.detailsJson;
+      return this.$store.state.detailsJson;
     }
   },
   methods: {
@@ -165,7 +165,7 @@ export default {
     goDetails(json) {
       this.$router.push("/details" + json.product_id);
       //用过vuex store传入当前数据
-      store.state.detailsJson = json;
+      this.$store.state.detailsJson = json;
       document.documentElement.scrollTop = 0;
     },
     //置顶
@@ -182,10 +182,10 @@ export default {
     },
     breake(path){
       this.$router.push(path);
-      store.state.tabbarFlag = true;
+      this.$store.state.tabbarFlag = true;
     },
     addToCart(){
-      store.state.cartFoodsList.push(this.json);
+      this.$store.state.cartFoodsList.push(this.json);
       this.cartNum++;
       this.addCartSuccess = true;
       setTimeout(() =>{
@@ -197,7 +197,7 @@ export default {
   mounted() {
     //隐藏底部导航
     document.documentElement.scrollTop = 0;
-    store.state.tabbarFlag = false;
+    this.$store.state.tabbarFlag = false;
     //请求评论数据
     this.axios.get("/api/detailsComment").then(res => {
       this.commentList = res.data.data;

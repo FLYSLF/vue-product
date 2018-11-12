@@ -59,7 +59,7 @@ import CartHeader from "../../components/CartHeader";
 import CartIcon from "../../components/Cart_icon";
 import CartItem from "../../components/Cart_item";
 import axios from "axios";
-import store from "../../store/store"
+// import store from "../../store/store";
 import { Lazyload ,MessageBox } from "mint-ui";
 
 export default {
@@ -91,11 +91,12 @@ export default {
         document.documentElement.scrollTop + document.body.scrollTop;
       scrollTop >= 1000 ? (this.setTop1 = true) : (this.setTop1 = false);
     };
-    store.state.tabbarFlag = true;
+   this.$store.state.tabbarFlag = true;
   },
   computed: {
     goodsList(){
-      return store.state.cartFoodsList;
+      // return store.state.cartFoodsList;
+      return this.$store.state.cartFoodsList;
     },
     //判断商品是否所有都勾选 勾选则切换全选状态
     checkto() {
@@ -115,7 +116,7 @@ export default {
     sumNum() {
       var num = 0;
       this.goodsList.map(item => (item.flag ? (num += item.sum) : item.sum));
-      store.state.cartNum = num;
+      this.$store.state.cartNum = num;
       return num;
       // return this.goodsList.map(item => item.flag) ? this.num++ : this.num--;
     },
