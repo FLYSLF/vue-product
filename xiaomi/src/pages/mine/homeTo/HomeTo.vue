@@ -4,11 +4,14 @@
 		<div id="allmap" ref="allmap"></div>
 		<router-view></router-view>
 		<div @touchstart="start()" @touchmove="move()" @touchend="end()" class="outerBox" :style="{top:top}">
+			<div @click.stop="cancellBubble($event)">
+				
 			<mt-navbar v-model="selected" >
-			 	 <mt-tab-item id="1" @click.stop="">选项一</mt-tab-item>
+			 	 <mt-tab-item id="1" >选项一</mt-tab-item>
 				  <mt-tab-item id="2">选项二</mt-tab-item>
 				  <mt-tab-item id="3">选项三</mt-tab-item>
 			</mt-navbar>
+			</div>
 			  
 
 			<mt-tab-container v-model="selected">
@@ -179,11 +182,16 @@
     			y:0,
     			dy:0,
     			my:0,
-    			selected:"1"
+    			selected:"1",
+    			moveFlag:true
 			}	
 		},
 		methods: {
+			cancellBubble(e){
+				this.moveFlag == false
+			},
 			start(){
+				if(this.moveFlag) return;
 				var touch;
 			    if(event.touches){
 			        touch = event.touches[0];
@@ -194,6 +202,7 @@
 			    this.dy = this.$el.children[2].offsetTop;
 			},
 			move(){
+				this.moveFlag == true;
 				var touch;
 			    if(event.touches){
 			        touch = event.touches[0];
@@ -201,9 +210,13 @@
 			        touch = event;
 			    }
 			    this.my = touch.clientY;
+			    
 			    this.top = this.my-this.y + this.dy + "px";
+			    if(parseInt(this.top) >= 600)this.top = 600+"px";
+			    if(parseInt(this.top) <= 136)this.top = 136 + "px";
 			},
 			end(){
+				if(this.moveFlag) return;
 			    if(this.my-this.y<0){
 			    	var leader=this.my;
 					var target=100;
